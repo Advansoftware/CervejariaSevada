@@ -1,0 +1,16 @@
+(function($) {
+   $.fn.equalizeColsLite = function() {
+      var maiorHeight = 0;
+      var atualHeight = 0;
+
+	  //if (!$.browser.safari || $.browser.chrome) {
+         $(this).each(function(){
+             atualHeight = $(this).height();
+             if(atualHeight > maiorHeight){maiorHeight = $(this).height();}
+         });
+         $(this).each(function(){
+            $(this).height(maiorHeight+5);
+         });
+      //}
+   };
+})(jQuery);

@@ -1,0 +1,16 @@
+* { margin:0px; padding:0px; }
+a, area { outline:none; }
+a img, button, button img { border:none; outline:none; }
+button { overflow:visible; cursor:pointer; /*outline:none;*/ }
+button::-moz-focus-inner { border:0; padding:0; }
+input, select, textarea { outline:none; }
+textarea { overflow:auto; resize:none; }
+img { max-width:100%; height:auto }
+img.left { margin:0 20px 20px 0; }
+img.right { margin:0 0 20px 20px; }
+.left { float:left; display:inline; }
+.right { float:right; display:inline; }
+.clear { clear:both; float:none; }
+.alpha { margin-left:0px!important; margin-top:0px!important; padding-top:0px !important; border-top:none !important; }
+.omega { margin-right:0px!important; margin-bottom:0px!important; padding-bottom:0px !important; border-bottom:none !important; }
+.relative { position:relative; }

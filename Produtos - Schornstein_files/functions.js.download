@@ -1,0 +1,153 @@
+$(document).ready(function() {
+	
+	// banners home
+	if ( $('.swiper-slide').length > 1 ) {
+		var mySwiper = new Swiper ('#banner .swiper-container', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+			},
+		});
+	} else {
+		$('.swiper-button-prev,.swiper-button-next,.swiper-pagination').hide();
+	}
+	
+	$('#onde-encontrar #estado').change(function(){
+		$.post('ajax/cidades.php?vende='+$('#vende').val()+'&estado='+$(this).val(), 
+			function(html){
+				$('#cidade').html(html);
+				$('#results').html('');
+			}
+		);
+	});
+	
+	$('#onde-encontrar #cidade').change(function(){
+		$.post('ajax/lojas.php?vende='+$('#vende').val()+'&cidade='+$(this).val(), 
+			function(html){
+				$('#results').html(html);
+				$('html,body').animate({
+				  scrollTop: $('.hr').offset().top
+				}, 1000);
+			}
+		);
+	});
+	
+	$('#downloads li.parent > span').click(function(){
+		$(this).toggleClass('open').parent('li').children('ul').slideToggle();
+	});
+	
+	$('#downloads .white a').click(function(){
+		$(this).addClass('visited');
+	});
+	
+	$('#news form').submit(function(){
+		$.post($(this).attr('action'),$(this).serialize(),function(ret){
+			alert(ret);
+			$('#news form')[0].reset();
+		});
+		return false;
+	});
+	
+	setasProduto();
+	$(window).resize(function(){
+		setasProduto();
+	});
+	
+	$('#produtos #familia .grid1').equalizeColsLite();
+	
+	$('#produtos #familia a').click(function(){
+		$('html,body').animate({
+		  scrollTop: 0
+		}, 400);
+	});
+	
+	$('#produtos').removeClass($('#produtos').attr('data-produto')).addClass(location.hash.slice(1)).attr('data-produto',location.hash.slice(1));
+	$(window).on('hashchange',function(){ 
+		produto = location.hash.slice(1);
+		$('div.infos, div.depoimento').hide();
+		$('div.infos.'+produto).fadeIn();
+		$('div.depoimento.'+produto).fadeIn();
+		$('#produtos').removeClass($('#produtos').attr('data-produto')).addClass(produto).attr('data-produto',produto);
+	});
+	
+	$('#produtos').each(function(){
+		produto = location.hash.slice(1);
+		if (produto!='') {
+			$('div.infos, div.depoimento').hide();
+			$('div.infos.'+produto).fadeIn();
+			$('div.depoimento.'+produto).fadeIn();
+		}
+	});
+	
+	$('#header a.mobile').click(function(){
+		if ($('body').hasClass('menu')) {
+			$('#menu').toggle('slide','left',500,
+				function(){
+					$('body').toggleClass('menu');
+				}
+			);
+		} else {
+			$('#menu').toggle('slide','left',500);
+			$('body').toggleClass('menu');
+		}
+		return false;
+	});
+	
+	$("*[href$='.jpg'],a.zoom,a.modal").not('.download').each(function(){
+		if($(this).attr('title')==undefined) $(this).attr('title','');
+	});
+	$("*[href$='.jpg'],a.zoom,a.modal").not('.download').prettyPhoto({
+			theme: 'pp_default',
+			slideshow: 3000,
+			autoplay_slideshow: false,
+			show_title: true,
+			overlay_gallery: false,
+			deeplinking: false,
+			social_tools: ''
+	});
+	
+	// menu reduzido
+	$(document).on("scroll", function(){
+		if ($(window).scrollTop() > 175) {
+			$('body').addClass('menu-fixo');
+		} else {
+			$('body').removeClass('menu-fixo');
+		}
+	});
+	
+	// produtos novos
+	$('#produtos #big-menu a').hover(function(){
+		$(this).find('img.hover').fadeIn();
+	}, function(){
+		$(this).find('img.hover').fadeOut();
+	});
+	
+	// produtos novos
+	$('#produtos .menu li.ico > a').click(function(){
+		$('#produtos .menu').addClass('open').find('li').removeClass('active open');
+		$(this).parent('li').addClass('active');
+		return false;
+	});
+	
+	// efeito de transicao
+	$('body.produtos').css({ 'opacity':'1' });
+	
+});
+
+function setasProduto(){
+	$('#produtos #banner').each(function(){
+		bt_width = ($(this).width() - $(this).find('div.center').width()) / 2;
+		if ($(window).width()<800) bt_width-=10;
+		$('#cycle-prev .bg,#cycle-next .bg').width(bt_width);
+	});
+}

@@ -1,0 +1,284 @@
+// JavaScript Document
+$(function(){
+	$.ajaxSetup({ cache: false });
+	
+	// valida o cpf
+	$('input.cpf').blur(function(){ valida_cpf($(this)); });
+	
+	// valida o email
+	$('input.email').blur(function(){ 
+		if (!checkMail($(this).val()) && $(this).val()!="") {
+			alert('Informe um e-mail válido!');
+			$(this).val('').focus();
+		}
+	});
+	
+	// mascaras
+	$('input.cnpj').mask('99.999.999/9999-99');
+	$('input.cpf').mask('999.999.999-99');
+	$('input.cep').mask('99999-999');
+	//$('input.fone').mask('(99) 9999-9999');
+	$('input.data').mask('99/99/9999');
+	$('input.hora').mask('99:99');
+	$('input.placa').mask('***-9999');
+	$('input.dois_digitos').mask('99');
+	//$('input.money').maskMoney({showSymbol:true});
+	
+	$('input.fone').focusout(function(){
+		var phone, element;
+		element = $(this);
+		element.unmask();
+		phone = element.val().replace(/\D/g, '');
+		if(phone.length > 10) {
+			element.mask("(99) 999-999-999");
+		} else {
+			element.mask("(99) 9999-9999?9");
+		}
+	}).trigger('focusout');
+
+	
+	$('input,select,textarea').blur(function(){
+		if ($(this).val()!='') {
+			$(this).parents('.campo').removeClass('obrigatorio');
+		}
+	});
+	
+	/*/ limpa o campo com o texto padrao
+	$('input,textarea').focus(function(){
+		if ($(this).hasClass('fone')) $(this).trigger('focusout');
+		if ($(this).val()==$(this).attr('title')) $(this).val('');
+	}).blur(function(){
+		if ($(this).val()=='') $(this).val($(this).attr('title'));
+	});*/
+	
+	// verifica os campos obrigatorios
+	$('form.validar').submit(function(){
+		var controles=new Array('hidden','submit','button'); // campos de controle nao serao validados
+		var especiais=new Array('radio','checkbox'); // campos com validacao especial
+		var enviar = true;
+		var validar = true;
+		var comparar = false;
+		var action = $(this).attr("action");
+		var bt_enviar = $(this).find("button.enviar");
+		var bt_aguarde = $(this).find("button.aguarde");
+		var returnpage = $(this).find("input[name=returnpage]").val();
+		var returndiv = $("div#returndiv");
+		var idioma = $(this).find('input[name=idioma]').val();
+		if (idioma==undefined) idioma=10;
+		
+		//configura as mensagens de acordo com o idioma
+		if (idioma==10) { 
+			var str_aguarde='Aguarde...';
+			var str_verifique='Verifique o campo em destaque.\nDeve possui o mesmo valor que o campo anterior.';
+			var str_atencao='Atenção: Os campos em destaque (vermelho) são de preenchimento obrigatório.';
+		} else {
+			var str_aguarde='Please, wait...';
+			var str_verifique='Check the field highlighted.\nYou should have the same value as the previous field.';
+			var str_atencao='Note: Fields highlighted (red) are required.';
+		} 
+
+		//bt_enviar.hide();
+		//bt_aguarde.show();
+		
+		// campos obrigatorios
+		$(this).find('input, select, textarea').each(function(){
+			opcional = $(this).hasClass('opcional');
+			if (!in_array($(this).attr('type'), controles) && !opcional) {
+				if (in_array($(this).attr('type'), especiais)) {
+					var sel = false;
+					$('input:'+$(this).attr('type')+'[name="'+$(this).attr('name')+'"]').each(function(){
+						if ($(this).attr('checked')) {
+							sel = true;
+							return false;
+						}
+					});
+					if (!sel) {
+						$(this).parents('.campo').addClass('obrigatorio');
+						enviar = false;
+					} else {
+						$(this).parents('.campo').removeClass('obrigatorio');
+					}
+				} else if($(this).val()=='' || $(this).val()==$(this).attr('title') || ($(this).attr("multiple") && $(this).find("option:selected").val()==undefined)) {
+					$(this).parents('.campo').addClass('obrigatorio');
+					enviar = false;
+				} else {
+					var desmarca=true;
+					$(this).parent('div').find('input,select,textarea').each(function(){
+						if ($(this).val()=='' || $(this).val()==$(this).attr('title')) desmarca=false;
+					});
+					if (desmarca) $(this).parents('.campo').removeClass('obrigatorio');
+				}
+			}
+		});
+
+		// se esta enviando, verifica se tem campos para comparar (ex: senha1 e senha2)
+		if (enviar) {
+			$(this).find('input.comparar').each(function(){
+				// guarda o valor do primeiro campo
+				if (comparar==false) {
+					comparar=$(this).val();
+				} else if(comparar!=$(this).val()) {
+					$(this).parents('.campo').addClass('obrigatorio');
+					enviar = false;
+					alert(str_verifique);
+				}
+			});
+		} else {
+			alert(str_atencao);
+			var primeiro = $(this).find('.obrigatorio:first');
+			var toTop = primeiro.offset().top - 100;
+			$('html,body').animate({
+			  scrollTop: toTop
+			}, 'fast', function(){
+				//primeiro.find('input').focus();
+			});
+		}
+		
+		// retira campos ocultos que nao estao sendo usados
+		//if (enviar) $(this).find('div.hide').remove();
+		
+		if ($(this).hasClass("ajax") && enviar) {
+			bt_enviar.hide();
+			bt_aguarde.show();
+			var campos = $(this).serialize();
+			$.post(action, campos, function(retorno){
+				if (retorno.toLowerCase().indexOf("erro")<0) {
+					$("form.ajax").each(function(){ 
+						if (returndiv.length) {
+							$('html,body').animate({
+							  scrollTop: returndiv.offset().top + 200
+							}, 1000);
+							returndiv.find('div').html(retorno).parent('div').fadeIn();
+							tmp = setTimeout(function(){ returndiv.fadeOut(); },5000);
+						} else alert(retorno);
+						if (returnpage==undefined) this.reset(); 
+						else if (returnpage=='reload') location.reload();
+						else location.href=returnpage;
+					});
+				} else alert(retorno);
+				bt_enviar.show();
+				bt_aguarde.hide();
+			});
+			return false;
+		}
+
+		bt_enviar.show();
+		bt_aguarde.hide();
+		
+		return enviar;
+
+	});
+	
+	$('form .reset').click(function(){
+		$(this).parents('form').find('input:text,input:radio,input:checkbox,select,textarea').each(function(){
+			$(this).find('option:selected').attr('selected',false);
+			$(this).val('');
+			return false;
+		});
+	});
+	
+});
+
+
+// valida somente numeros
+function numero(str) {
+	if (str=="") return true;
+	var reDigits = /^\d+$/;
+	return (reDigits.test(str));
+} 
+
+
+// Função em javascript que simula a função in_array do PHP.
+function in_array(needle,haystack) {
+	return new RegExp('(^|\,)'+needle+'(\,|$)','gi').test(haystack);
+}
+
+/* Valida CPF */
+function isCPF(value) {
+	 value = jQuery.trim(value);
+	 cpf = value.replace(/\.|-|\//gi,''); // elimina .(ponto), -(hifem) e /(barra)
+	 while(cpf.length < 11) cpf = "0"+ cpf;
+	 var expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
+	 var a = [];
+	 var b = new Number;
+	 var c = 11;
+	 for (i=0; i<11; i++){
+		  a[i] = cpf.charAt(i);
+		  if (i < 9) b += (a[i] * --c);
+	 }
+	 if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11-x }
+	 b = 0;
+	 c = 11;
+	 for (y=0; y<10; y++) b += (a[y] * c--);
+	 if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11-x; }
+	 if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10]) || cpf.match(expReg)) return false;
+	 return true;
+}
+
+// valida email
+function checkMail(mail){
+	var er = new RegExp(/^[A-Za-z0-9_\-\.]+@[A-Za-z0-9_\-\.]{2,}\.[A-Za-z0-9]{2,}(\.[A-Za-z0-9])?/);
+	if(typeof(mail) == "string"){
+		if(er.test(mail)){ return true; }
+	} else if(typeof(mail) == "object"){
+		if(er.test(mail.value)){ return true; }
+	} else {
+		return false;
+	}
+}
+
+function valida_cpf(campo){
+
+	if (campo.val()!="" && campo.val()!="___.___.___-__") {
+
+		pri = campo.val().substring(0,3); //eval("document."+f+"."+campo+".value.substring(0,3)");
+		seg = campo.val().substring(4,7); //eval("document."+f+"."+campo+".value.substring(4,7)");
+		ter = campo.val().substring(8,11); //eval("document."+f+"."+campo+".value.substring(8,11)");
+		qua = campo.val().substring(12,14); //eval("document."+f+"."+campo+".value.substring(12,14)");
+		
+		//alert(pri+seg+ter+qua);
+
+		var i;
+		var numero;
+
+		numero = (pri+seg+ter+qua);
+
+		s = numero;
+		c = s.substr(0,9);
+		var dv = s.substr(9,2);
+		var d1 = 0;
+
+		for (i = 0; i < 9; i++){
+			d1 += c.charAt(i)*(10-i);
+		}
+
+		if (d1 == 0){
+			var result = "falso";
+		}
+
+		d1 = 11 - (d1 % 11);
+		if (d1 > 9) d1 = 0;
+
+		if (dv.charAt(0) != d1){
+			var result = "falso";
+		}
+
+		d1 *= 2;
+		for (i = 0; i < 9; i++){
+			d1 += c.charAt(i)*(11-i);
+		}
+
+		d1 = 11 - (d1 % 11);
+		if (d1 > 9) d1 = 0;
+
+		if (dv.charAt(1) != d1){
+			var result = "falso";
+		}
+
+
+		if (result == "falso") {
+			alert("CPF inválido!");
+			campo.val('');
+		}
+	}
+}

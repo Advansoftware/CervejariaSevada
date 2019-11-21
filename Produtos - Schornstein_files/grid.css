@@ -1,0 +1,77 @@
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWELVE  */
+.grid12 {
+	width: 100%;
+}
+
+.grid11 {
+  	width: 91.53%;
+}
+.grid10 {
+  	width: 83.06%;
+}
+
+.grid9 {
+  	width: 74.6%;
+}
+
+.grid8 {
+  	width: 66.13%;
+}
+
+.grid7 {
+  	width: 57.66%;
+}
+
+.grid6 {
+  	width: 49.2%;
+}
+
+.grid5 {
+  	width: 40.73%;
+}
+
+.grid4 {
+  	width: 32.26%;
+}
+
+.grid3 {
+  	width: 23.8%;
+}
+
+.grid2 {
+  	width: 15.33%;
+}
+
+.grid1 {
+  	width: 6.866%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+    
+    .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12 {
+	width: 100%; 
+	}
+}

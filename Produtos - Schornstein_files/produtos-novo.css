@@ -1,0 +1,143 @@
+html { background:#000 }
+body.produtos { opacity:0; transition:2s opacity }
+body.produtos #header { box-shadow:0px 0px 20px 0px #000000; position:relative; z-index:10; }
+
+#produtos { background:#ffe3bc url(../img/produtos2/bg-produtos.jpg); background-size:cover }
+#produtos .menu { background:#221f1f; text-transform:uppercase; text-align:center }
+#produtos .menu a { text-decoration:none; color:#FFF }
+#produtos .menu ul { list-style-type:none; display:inline-block; height:100px }
+#produtos .menu ul li { display:inline-block; float:left }
+#produtos .menu ul li div { display:none; margin-top:-8px }
+#produtos .menu ul li ul { overflow:hidden; display:-webkit-box; display:-ms-flexbox; display:-webkit-flex; display:flex; align-items: center; font-size:14px }
+#produtos .menu ul li.active div , #produtos .menu ul li.open div { display:inline-block }
+#produtos .menu ul li ul li a { padding:5px 5px; display:block; margin:0 14px }
+#produtos .menu ul li ul li.active { background:url(../img/produtos2/menu-active-bg.png) center bottom no-repeat }
+#produtos .menu ul li.ico { border-right:2px solid #3b3a3b; height:84px; margin-top:8px }
+#produtos .menu ul li.ico:last-child { border-right:none }
+#produtos .menu ul li.ico > a { line-height:100px; padding:0 60px 0 100px; display:inline-block; vertical-align:top; margin-top:-8px; transition:all 0.5s }
+#produtos .menu ul li.ico > a:hover { background-color:#ba912f; color:#221f1f; background-position:15px -100px }
+#produtos .menu ul a.ico-garrafas { background:url(../img/produtos2/ico-garrafa.png) 15px top no-repeat; }
+#produtos .menu ul a.ico-long-neck { background:url(../img/produtos2/ico-long-neck.png) 15px top no-repeat; }
+#produtos .menu ul a.ico-latas { background:url(../img/produtos2/ico-lata.png) 15px top no-repeat; }
+
+#produtos .menu.open li.ico > a { font-size:10px; padding:0; width:96px; line-height:170px; height:100px; overflow:hidden; background-position:center top; transition:none; background-position:center -5px }
+#produtos .menu.open li.ico.active > a, #produtos .menu.open li.ico.open > a, #produtos .menu.open li.ico > a:hover { background-color:#ba912f; color:#221f1f; background-position:center -105px !important }
+
+#produtos #big-menu { background:#ffe3bc; padding:30px 0 }
+#produtos #big-menu a { box-shadow:4px 4px 16px #999; display:inline-block; transition:all 0.5s; position:relative }
+#produtos #big-menu a img.hover { position:absolute; left:0; top:0; display:none }
+#produtos #big-menu a:hover { box-shadow:4px 4px 16px #666 }
+
+#produtos .det { display:-webkit-box; display:-ms-flexbox; display:-webkit-flex; display:flex; align-items:center }
+#produtos .det .desc h1 { font-size:100px; font-weight:900; font-style:italic; line-height:100%; text-transform:uppercase; margin:50px 0 10px 0 }
+#produtos .det .desc h2 { font-size:30px; font-weight:normal; text-transform:uppercase; line-height:100% }
+#produtos .det .desc .texto { line-height:200%; border-top:4px solid #383838; margin-top:40px; padding-top:35px; margin-bottom:50px }
+#produtos .det .foto { text-align:center; display:-webkit-box; display:-ms-flexbox; display:-webkit-flex; display:flex; align-items:center; justify-content:center; position:relative }
+#produtos .det .foto .arrow { position:absolute }
+#produtos .det .foto .arr-left { left:0 }
+#produtos .det .foto .arr-right { right:0 }
+#produtos .det .info { text-align:right }
+#produtos .det .info span { white-space:nowrap }
+#produtos .det .info h3 { font-size:27px; font-weight:bold; text-transform:uppercase; border-bottom:4px solid #383838; margin:33px 0 15px 0; padding-bottom:2px }
+
+
+#produtos #ipa h1, #produtos #ipa h2, #produtos #ipa h3  { color:#729a52 }
+#produtos #pilsen h1, #produtos #pilsen h2, #produtos #pilsen h3  { color:#ba912f }
+#produtos #weiss h1, #produtos #weiss h2, #produtos #weiss h3  { color:#598ca6 }
+#produtos #witbier h1, #produtos #witbier h2, #produtos #witbier h3  { color:#b97f5e }
+#produtos #apa h1, #produtos #apa h2, #produtos #apa h3  { color:#2ba39c }
+#produtos #bock h1, #produtos #bock h2, #produtos #bock h3  { color:#56222d }
+#produtos #imperial-stout h1, #produtos #imperial-stout h2, #produtos #imperial-stout h3  { color:#000 }
+#produtos #soul h1, #produtos #soul h2, #produtos #soul h3  { color:#de8a04 }
+#produtos #imperial-ipa h1, #produtos #imperial-ipa h2, #produtos #imperial-ipa h3  { color:#344c20 }
+#produtos #koyt h1, #produtos #koyt h2, #produtos #koyt h3  { color:#972729 }
+#produtos #catharina-sour-cupuacu h1, #produtos #catharina-sour-cupuacu h2, #produtos #catharina-sour-cupuacu h3  { color:#944d0e }
+#produtos #new-england-ipa h1, #produtos #new-england-ipa h2, #produtos #new-england-ipa h3  { color:#bb3317 }
+#produtos #session-ipa h1, #produtos #session-ipa h2, #produtos #session-ipa h3  { color:#729a52 }
+#produtos #munich-dunkel h1, #produtos #munich-dunkel h2, #produtos #munich-dunkel h3  { color:#7b2a2c }
+#produtos #chocolate-com-pimenta h1, #produtos #chocolate-com-pimenta h2 { color:#502414 }
+#produtos #belgian-blond-ale h1, #produtos #belgian-blond-ale h2, #produtos #belgian-blond-ale h3 { color:#5f739a }
+#produtos #porter-cafe h1, #produtos #porter-cafe h2, #produtos #porter-cafe h3  { color:#7B3513 }
+#produtos #black-ipa h1, #produtos #black-ipa h2, #produtos #black-ipa h3  { color:#5C452F }
+
+
+#produtos #apa h2 { font-size:26px }
+#produtos #bock h2 { font-size:26px; width:75%  }
+#produtos #catharina-sour-cupuacu h1 { font-size:60px; width:140% }
+#produtos #imperial-ipa h1 { font-size:80px }
+#produtos #imperial-ipa h2 { font-size:26px }
+#produtos #imperial-stout h2 { font-size:26px }
+#produtos #ipa h1, #produtos #apa h1 { font-size:137px }
+#produtos #ipa h2 { width:75% }
+#produtos #koyt h2 { font-size:26px; width:70% }
+#produtos #munich-dunkel h1 { font-size:80px }
+#produtos #munich-dunkel h2 { font-size:28px }
+#produtos #new-england-ipa h1 { font-size:60px; width:110% }
+#produtos #session-ipa h1 { font-size:80px; width:140% }
+#produtos #soul h2 { width:75% }
+#produtos #weiss h2 { width:75% }
+#produtos #witbier h1 { font-size:90px }
+#produtos #witbier h2 { font-size:26px }
+#produtos #chocolate-com-pimenta h1 { font-size:60px; width:120% }
+#produtos #belgian-blond-ale h1 { font-size:60px; width:120% }
+
+
+@media only screen and (max-width : 768px) and (orientation : portrait) {
+	#produtos .menu ul li ul { display:none }
+	#produtos .menu ul li.active ul { position:absolute; left:0; top:91px; background:#221f1f; z-index:1000; padding:6px 0 }
+	#produtos .menu ul li.active ul, #produtos .menu ul li.active ul li { display:block; width:112%; margin:10px -6% }
+	#produtos .menu ul li.active > a { margin-bottom:10px }
+	#produtos .menu ul li.active ul li br { display:none }
+	#produtos .menu ul { height:auto; min-height:100px }
+	#produtos .menu ul ul { min-height:inherit }
+	#produtos .menu ul li.ico { height:auto; min-height:84px }
+	#produtos .menu ul li.ico > a { font-size:10px; padding:0; width:96px; line-height:170px; height:100px; overflow:hidden; background-position:center top; transition:none; background-position:center -5px }
+	#produtos { font-size:16px }
+	#produtos .det .desc h1 { font-size:60px!important }
+	#produtos .det .desc h2 { font-size:20px!important; width:120%!important }
+	#produtos .det .info h3 { font-size:18px }
+	#produtos .det .foto .arr-left { left:-7% }
+	#produtos .det .foto .arr-right { right:-7% }
+	#produtos #catharina-sour-cupuacu h1 { width:370%!important; font-size:45px!important }
+	#produtos #catharina-sour-cupuacu h2 { width:350%!important }
+	#produtos #imperial-ipa h1 { width:250%!important }
+	#produtos #imperial-ipa h2 { width:180%!important }
+	#produtos #ipa h2 { width:140%!important }
+	#produtos #new-england-ipa h1 { width:370%!important; font-size:45px!important }
+	#produtos #munich-dunkel h1 { width:350%!important }
+	#produtos #munich-dunkel h2 { width:180%!important }
+	#produtos #session-ipa h1 { width:350%!important }
+	#produtos #weiss h2 { width:105%!important }
+	#produtos #chocolate-com-pimenta h1 { font-size:45px!important; width:350%!important }
+	#produtos #chocolate-com-pimenta h2 { width:350%!important }
+	#produtos #belgian-blond-ale h2 { width:350%!important }
+}
+
+@media only screen and (max-width : 480px) and (orientation : portrait) {
+	#produtos .det, #produtos .det .foto { display:block }
+	#produtos #big-menu .col { margin:20px 0 }
+	#produtos #apa h2 { width:80%!important }
+	#produtos #bock h2 { width:60%!important }
+	#produtos #catharina-sour-cupuacu h1 { width:100%!important; font-size:40px!important }
+	#produtos #catharina-sour-cupuacu h2 { width:90%!important }
+	#produtos #ipa h2 { width:75%!important }
+	#produtos #imperial-ipa h1 { font-size:45px!important }
+	#produtos #imperial-stout h2 { width:70%!important }
+	#produtos #koyt h2 { width:50%!important }
+	#produtos #munich-dunkel h2 { width:90%!important }
+	#produtos #new-england-ipa h1 { width:100%!important; font-size:45px!important }
+	#produtos #session-ipa h1 { width:100%!important; font-size:50px!important }
+	#produtos #session-ipa h2 { width:70%!important }
+	#produtos #soul h2 { width:60%!important }
+	#produtos #weiss h2 { width:100%!important }
+	#produtos #witbier h2 { width:80%!important }
+	#produtos #chocolate-com-pimenta h1 { font-size:45px!important; width:100%!important }
+	#produtos #belgian-blond-ale h1 { font-size:45px!important; width:100%!important }
+	#produtos .det .desc h1 { font-size:60px!important; max-width:100% }
+	#produtos .det .desc h2 { font-size:18px!important; max-width:100% }
+	#produtos .det .desc .texto { text-align:justify }
+	#produtos .det .info { text-align:left; margin-bottom:80px }
+	#produtos .det .foto .arrow { top:50% }
+	#produtos .det .foto .arr-left { left:-1% }
+	#produtos .det .foto .arr-right { right:-1% }
+}

@@ -1,0 +1,559 @@
+/**** geral ****/
+body, html { min-width:1400px }
+body, td, input, select, textarea, button { font-family: 'Bitter', serif; font-size:18px; color:#1e1615; letter-spacing:0.35px }
+#content { padding:50px 0 70px 0; background-color:#fff1c7; background:url(../img/cervejaria/cervejaria-bg.jpg) center top no-repeat; background-size:cover; font-style:italic; line-height:200% }
+.mobile { display:none }
+.section { background-position:center top; background-repeat:no-repeat; background-size:cover }
+.center { max-width:1400px; margin:auto; position:relative }
+.full img { width:100%; height:auto }
+.hr { height:4px; width:900px; margin:90px auto; background:#000 }
+h1 { font-size:61px; color:#1a1211; font-style:italic; margin-bottom:30px }
+form .campo label { width:150px; text-align:right; display:inline-block; vertical-align:top }
+form .campo { margin-bottom:11px }
+input, select, textarea { height:38px; border:1px solid #363636; background:#FFF; width:410px; padding:0 20px; font-size:21.6px; font-style:italic; color:#31170c; margin-left:10px; 
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+}
+button { height:38px; color:#2e1b0d; font-size:22px; font-weight:bold; letter-spacing:-0.4px; text-transform:uppercase; padding:0 25px; 
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ecba09+0,c09608+100 */
+	background: #ecba09; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ecba09 0%, #c09608 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ecba09 0%,#c09608 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ecba09 0%,#c09608 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ecba09', endColorstr='#c09608',GradientType=0 ); /* IE6-9 */
+}
+button:hover {
+	background: #c09608; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c09608 0%, #ecba09 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #c09608 0%,#ecba09 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #c09608 0%,#ecba09 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c09608', endColorstr='#ecba09',GradientType=0 ); /* IE6-9 */
+}
+.label { font-size:18px;font-weight:normal }
+.label input[type=checkbox], .label input[type=radio] { width:22px;vertical-align:middle }
+.obrigatorio { color:#C30 }
+.obrigatorio input, .obrigatorio select, .obrigatorio textarea { border-color:#C30 }
+#returndiv { display:none }
+#returndiv div { display:inline-block; background:#390; color:#FFF; padding:6px 20px; border-radius:10px }
+
+/**** cabecalho ****/
+#header { background-color:#231007; background-image:url(../img/header-bg.jpg); height:170px }
+#header .col { margin:0 }
+#header ul { list-style-type:none }
+#menu { text-align:right; margin-top:75px; letter-spacing:0.5px; font-size:15px }
+#menu li { display:inline-block; margin-left:20px }
+#menu li:first-child { margin-left:0 }
+#menu li.active a { font-weight:bold; border-bottom:3px solid #533806; }
+#menu a { color:#bc9307; text-transform:uppercase; text-decoration:none; padding-bottom:2px }
+#menu a:hover { border-bottom:3px solid #533806; }
+#social { width:101px; height:39px; background:#FFF; position:absolute; right:5px; top:0; 
+	-moz-border-radius: 0 0 18px 18px;
+	-webkit-border-radius: 0 0 18px 18px;
+	border-radius: 0 0 18px 18px;
+}
+#social li { display:inline; float:left; margin:0 0.4px; }
+#social li:first-child { margin-left:8px }
+#social a { display:inline-block; width:38px; height:39px; text-indent:-999em; background:url(../img/social-icons-header.png) no-repeat }
+#social .tube { background-position:-39px 0px }
+#social .mail { background-position:-78px 0px }
+
+/**** rodape ****/
+#footer { height:90px; background-color:#311607; background-image:url(../img/footer-bg.jpg); color:#fffddd; font-style:italic }
+#footer .center { width:1290px; border-top:1px solid #fffddd; border-bottom:1px solid #fffddd; line-height:6px; margin-top:25px; height:33px; }
+#footer a { color:#fffddd; text-decoration:none }
+#footer .social { font-size:15.5px; text-transform:uppercase; }
+#footer .social > div { position:absolute; left:20px; top:6px; padding-right:22px; border-right:1px solid #fffddd; height:21px; display:inline-block; line-height:20px }
+#footer .social ul { list-style-type:none; height:33px; display:inline-block; position:relative; top:-6px }
+#footer .social ul li { display:inline-block; }
+#footer .social ul li a { display:block; height:33px; width:33px; text-indent:-999em; background:url(../img/social-icons-footer.png) no-repeat }
+#footer .social .tube { background-position:-33px 0px }
+#footer .social .mail { background-position:-66px 0px }
+#footer .sebeber { font-size:13px; letter-spacing:2px; text-align:center }
+#footer .links { font-size:12px; text-align:right }
+#footer .links > div { position:absolute; right:20px; top:6px; border-left:1px solid #fffddd; height:21px; display:inline-block; line-height:20px }
+#footer .links a { margin-left:22px }
+
+/**** receba news ****/
+#news { background-color:#fff8e3; padding:42px 0; position:relative; z-index:10; text-align:center }
+#news hr { border:none; border-bottom:3px solid #302622; margin:30px auto; width:70% }
+#news form { text-align:center; margin-top:10px; color:#302622; font-size:25px; font-weight:bold; text-transform:uppercase; letter-spacing:-0.6px }
+#news form input { padding-right:85px }
+#news form input::-webkit-input-placeholder, #home form input:-moz-placeholder, #home form input::-moz-placeholder, #home form input:-ms-input-placeholder {  color:#a18b81 }
+#news form div { position:relative; display:inline-block  }
+#news form button { position:absolute; right:1px; top:1px; width:75px; padding:0 }
+
+/**** home ****/
+.home .home { padding:10px 0 30px 0!important; /*height:300px; /*background:#fff8e3 url(../img/banners-bg.jpg) center top no-repeat*/ }
+.home #banner { background-color:#ffb800; }
+.home .banner { max-width:287px; display:inline-block; float:none; box-shadow:3px 3px 15px -4px #000000 }
+.home .banner img { max-width:100% }
+/*.home .banner.left { background:url(../img/banners-bg.jpg) -100px bottom no-repeat; text-align:right }
+.home .banner.left img { margin-right:21px }
+.home .banner.right { background:url(../img/banners-bg.jpg) -800px bottom no-repeat }
+.home .banner img { width:640px; height:168px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+}*/
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev { outline:none }
+.swiper-button-next { background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") }
+.swiper-button-prev { background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E") }
+.swiper-pagination-bullet { width:12px; height:12px }
+.swiper-pagination-bullet-active { background:#FFF }
+
+/**** cervejaria ****/
+#cervejaria { background-color:#fff1c7; background:url(../img/cervejaria/cervejaria-bg.jpg) center top no-repeat; background-size:cover; font-style:italic; line-height:225%; text-align:justify }
+#cervejaria .full { background-color:#ffb800 }
+#cervejaria h1 { margin:25px 0 40px }
+#cervejaria .padd { padding-top:120px }
+#cervejaria .grid5 { width:40%; margin:1% 5% }
+#cervejaria .bares { padding-bottom:40px }
+#cervejaria .bares h1 { color:#bc8805 }
+#cervejaria .bares img { width:100%; height:auto }
+#cervejaria .bares .left, #cervejaria .right { width:49.4% }
+#cervejaria .bares .left > div { float:right; margin-right:55px; width:560px; }
+#cervejaria .bares .right > div { margin-left:55px; width:560px; }
+#cervejaria .bares div > div > div { height:250px }
+
+/**** produtos ****/
+#produtos #banner { background-color:#eb8f6a; background-image:url(../img/produtos/fundo-bock.jpg); background-position:center bottom; height:830px; font-style:italic; text-align:justify; line-height:225%; overflow:hidden }
+#produtos #banner .produto { height:830px; width:1400px }
+#produtos #banner .faixa { position:relative }
+#produtos #banner .faixa .bg { display:inline-block; height:92px; background:url(../img/produtos/banner-faixa.png) center }
+#produtos #cycle-prev { position:absolute; left:0px; top:369px; text-align:right; z-index:2000; cursor:pointer }
+#produtos #cycle-next { position:absolute; right:0px; top:369px; text-align:left; z-index:2000; cursor:pointer }
+/*#produtos #banner .faixa { background-color:#ffb800; background:url(../img/produtos/banner-faixa.png) center repeat-x; height:830px }
+#produtos #banner .center { background:url(../img/produtos/banner-bg.jpg) center bottom no-repeat; height:830px }*/
+#produtos #banner .grid4.left { margin:150px 0 0 207px }
+#produtos #banner .grid5.right { margin:35px 80px 0 0 }
+#produtos #banner h1 { border-bottom:1px solid #302622; line-height:normal; display:inline-block; margin-bottom:40px }
+#produtos.bock #banner { background-color:#eb8f6a; background-image:url(../img/produtos/fundo-bock.jpg) }
+#produtos.witbier #banner { background-color:#ffae53; background-image:url(../img/produtos/fundo-witbier.jpg) }
+#produtos.weiss #banner { background-color:#8cb0c0; background-image:url(../img/produtos/fundo-weiss.jpg) }
+#produtos.pilsen #banner { background-color:#ffb800; background-image:url(../img/produtos/fundo-pilsen.jpg) }
+#produtos.india-pale-ale #banner { background-color:#6da43e; background-image:url(../img/produtos/fundo-ipa.jpg) }
+#produtos.imperial-stout #banner { background-color:#3d1b00; background-image:url(../img/produtos/fundo-stout.jpg); color:#FFF }
+#produtos.imperial-stout #banner h1 { color:#FFF; border-bottom-color:#FFF }
+#produtos.schornstein-soul #banner { background-color:#585854; background-image:url(../img/produtos/fundo-soul.jpg); color:#000 }
+#produtos.schornstein-soul #banner h1 { letter-spacing:-3px; color:#000; border-color:#000 }
+#produtos.imperial-ipa #banner { background-color:#7a934c; background-image:url(../img/produtos/fundo-imperial-ipa.jpg); color:#000 }
+#produtos.imperial-ipa #banner h1 { color:#000; border-color:#000 }
+#produtos.american-pale-ale #banner { background-color:#1FEEDC; background-image:url(../img/produtos/fundo-apa.jpg) }
+#produtos.american-pale-ale #banner h1 { font-size:42px }
+
+#produtos.schornstein-soul #marrom,
+#produtos.imperial-ipa #marrom { display:none }
+
+#produtos #marrom { background-color:#402004; color:#FFF; font-style:italic }
+#produtos .depoimento { font-size:17.5px; font-family:Arial, Helvetica, sans-serif; line-height:175%; text-align:justify; padding-bottom:100px; display:none }
+#produtos .depoimento blockquote { float:right; width:500px; padding:20px 0px 5px 30px; margin:140px 50px 0 0; background:url(../img/produtos/quote-left.png) left top no-repeat; }
+#produtos .depoimento blockquote blockquote { padding:0 30px 0 0; margin:0; width:auto; background:url(../img/produtos/quote-right.png) right bottom no-repeat }
+#produtos .depoimento .foto { margin-top:90px; background-color:#481b01; padding:5px; margin-left:70px; display:inline-block; text-align:right; font-size:13px; line-height:normal }
+#produtos .depoimento .foto .nome { margin:5px 10px 0 0 }
+#produtos .infos { border-top:2px solid #FFF; padding:75px 0 100px 0; font-size:14px; line-height:250%; display:none }
+#produtos .infos h2 { font-size:18px; text-transform:uppercase; font-style:normal; color:#fffcdd; line-height:normal; margin:23px 0 30px }
+#produtos .infos .grid2 { padding-left:8.47%; background-repeat:no-repeat; background-position:left top; }
+#produtos .infos .info { background-image:url(../img/produtos/ico-info.png) }
+#produtos .infos .ingre { background-image:url(../img/produtos/ico-ingre.png) }
+#produtos .infos .harmo { background-image:url(../img/produtos/ico-harmo.png) }
+#produtos .infos .envaza { background-image:url(../img/produtos/ico-envaza.png) }
+
+#produtos.bock .infos .info { background-image:url(../img/produtos/copo-bock.png) }
+#produtos.witbier .infos .info { background-image:url(../img/produtos/copo-witbier.png) }
+#produtos.weiss .infos .info { background-image:url(../img/produtos/copo-weiss.png) }
+#produtos.pilsen .infos .info { background-image:url(../img/produtos/copo-pilsen.png) }
+#produtos.india-pale-ale .infos .info { background-image:url(../img/produtos/copo-ipa.png) }
+#produtos.imperial-stout .infos .info { background-image:url(../img/produtos/copo-stout.png) }
+
+#produtos #familia { height:533px; padding-top:75px; background-image:url(../img/produtos/familia-bg.jpg); background-color:#f0eed2; text-align:center }
+#produtos #familia img { width:auto }
+#produtos #familia .grid1 { width:6.6%; margin:2.2% }
+#produtos #familia .esq1 img { margin-left:60px }
+#produtos #familia .dir1 img { margin-right:60px }
+#produtos #familia .esq2 img { margin-left:38px }
+#produtos #familia .dir2 img { margin-right:38px }
+#produtos #familia .esq3 img { margin-left:15px }
+#produtos #familia .dir3 img { margin-right:15px }
+
+/**** brot ****/
+#brot #info { height:802px; background-color:#fee9b8; background-image:url(../img/brot/info-bg.jpg); position:relative; z-index:2000; font-style:italic; line-height:200%; text-align:center }
+#brot #info .logo { margin:80px 0 50px 0 }
+#brot #info #pao { position:absolute; left:0; top:0 }
+#brot .produtos { background-color:#fff8e3; text-align:center }
+#brot .produtos img { margin:-160px 0 -20px 0 }
+
+/**** armazem ****/
+#armazem { background-color:#fff1c7; background:url(../img/cervejaria/cervejaria-bg.jpg) center top no-repeat; background-size:cover; font-style:italic; line-height:225%; text-align:justify }
+#armazem .full { background-color:#ffb800 }
+#armazem h1 { margin:25px 0 40px }
+#armazem .padd { padding-top:120px }
+#armazem .grid5 { width:40%; margin:1% 5% }
+#armazem .franchising { padding-bottom:40px }
+#armazem .franchising h1 { color:#bc8805 }
+#armazem .franchising img { width:100%; height:auto; margin-bottom:10px }
+#armazem .franchising .left, #armazem .right { width:49.4% }
+#armazem .franchising .left > div { float:right; margin-right:55px; width:560px; }
+#armazem .franchising .right > div { margin-left:55px; width:560px; }
+#armazem .franchising form { margin-top:50px }
+#armazem .franchising form input { margin:0 0 20px 0 }
+#armazem .franchising form button { margin:15px 0 0 0 }
+#armazem .franchising .left h6 span { font-size:18px; color:#1e1615; background-color:#cea208; padding:1px 18px 3px 18px; height:35px;
+	border-radius:8px 
+}
+#armazem .franchising .left a { background-color:#1e1615; color:#FFF; padding:0 10px; display:inline-block; font-size:14px; text-decoration:none; line-height:26px; margin-top:-5px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+}
+#logo-armazem { margin-top:-189px }
+
+/**** imprensa ****/
+#imprensa #content .grid12 { text-align:center }
+#imprensa #content a { color:#1e1615; text-decoration:none }
+#imprensa #content h2 { font-size:30.7px; color:#302622; text-transform:uppercase; font-style:normal; letter-spacing:-0.5px; margin-bottom:20px }
+#imprensa #content h3, #noticias h3 { font-size:42px; color:#bc8805; letter-spacing:2px; margin-bottom:50px; }
+
+/**** noticias ****/
+#noticias { background-color:#fff1ca; line-height:150% }
+#noticias h2 { text-align:center; text-transform:uppercase; margin:70px 0 }
+#noticias .chamada { margin-bottom:85px; width:48% }
+#noticias .chamada a { text-decoration:none; color:#302622; font-size:16px; 
+	transition:all 0.3s 
+}
+#noticias .chamada a:hover { color:#bc8805 }
+#noticias .chamada a:hover img { border-color:#bc8805;
+	-moz-filter: grayscale(50%); 
+	-webkit-filter: grayscale(50%); 
+    filter: grayscale(50%);
+	-moz-transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+}
+#noticias .chamada img, #noticias .conteudo .grid4 img  { border:7px solid #FFF; max-width:92% }
+#noticias .chamada .txt { margin-bottom:20px }
+#noticias .conteudo .grid4 img { margin-top:10px; width:92% }
+#noticias .conteudo button { margin-top:30px; font-size:14px }
+
+/**** contato ****/
+#contato #content { padding-bottom:10px }
+#contato #content h2 { font-size:30.7px; color:#302622; text-transform:uppercase; font-style:normal; letter-spacing:-0.5px; margin:0 0 20px 20px; }
+#contato form { font-size:20px; font-weight:bold }
+#contato form textarea { height:200px; padding:10px 20px; overflow:auto }
+#contato form button { padding:0 25px; float:right; margin:20px 70px 0 0 }
+#contato .mapa { background-color:#e9e5dc; padding:8px; display:inline-block; -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px }
+#contato address { margin:30px 0 60px }
+#contato address h3 { font-size:34px }
+#contato address .grid5 { text-align:right }
+#contato address .grid5 div { padding-right:15px }
+#contato address .grid5 span { font-size:16.4px; font-style:normal; text-transform:uppercase; color:#fff2c9; padding:0 6px }
+#contato address .fab { background-color:#5d5140 }
+#contato address .bar { background-color:#302622 }
+#contato address .grid7 div { border-left:2px solid #302622; padding-left:15px }
+#contato address a { color:#1e1615; text-decoration:none }
+#contato .g-recaptcha, .optin { float:right; margin-right:70px }
+
+/**** onde encontrar ****/
+#onde-encontrar #banner { background-color:#f5871c }
+#onde-encontrar #content { text-align:center }
+#onde-encontrar #content h1 { font-style:normal; font-size:30.7px; margin-top:40px; text-transform:uppercase }
+#onde-encontrar #content h1 div { height:6px; background:#1a1211; width:50%; margin:4px auto; border-radius:3px; }
+#onde-encontrar #content h2 { text-transform:uppercase; font-weight:200; margin:60px auto 80px }
+#onde-encontrar #content .form { font-size:26px; font-style:normal }
+#onde-encontrar #content .form small { font-size:16px; font-style:italic; line-height:normal }
+#onde-encontrar #content .form label { width:auto; text-align:center }
+#onde-encontrar #content .form input[type=text] { background:none; border:none; text-align:center; font-size:19px; border-bottom:1px solid #1e1615; border-radius:0px; width:310px }
+#onde-encontrar #content .form input[type=checkbox] { width:33px; vertical-align:middle }
+#onde-encontrar #content .form div { margin-bottom:30px }
+#onde-encontrar #content button { background:#302622; color:#fff1c7; letter-spacing:3px }
+#onde-encontrar #content .form .obrigatorio input[type=text] { border-color:#C30 }
+#onde-encontrar #content .group.campo { text-align:center }
+#onde-encontrar #content .group.campo .col { display:inline-block; float:none }
+#onde-encontrar #results a { color:#1e1615; text-decoration:none }
+#onde-encontrar #results h3 { font-size:42px; color:#bc8805; letter-spacing:2px; margin-bottom:30px; }
+#onde-encontrar #results > div { display:inline-block; vertical-align:top }
+
+/**** indique ****/
+#indique .grid6 { margin:auto }
+#indique h1 { font-size:30.7px; color:#302622; text-transform:uppercase; font-style:normal; letter-spacing:-0.5px; margin-top:40px; text-align:center }
+#indique label { width:218px }
+#indique button { float:right; margin:30px 6px 20px 0; }
+
+/**** apresentações ****/
+#apresentacoes .grid6 { border:3px solid #ede7d6; background-color:#FFF; display:block; margin:auto }
+#apresentacoes .grid6 > div { padding:20px }
+#apresentacoes ul.list { list-style-type:none}
+#apresentacoes ul.list li.parent > span { background:url(../img/bullet-right.png) left 10px no-repeat; padding-left:30px; font-weight:bold; cursor:pointer; display:inline-block }
+#apresentacoes ul.list li.parent > span.open { background-image:url(../img/bullet-down.png) }
+#apresentacoes ul.list li small { font-size:12px; color:#999; margin-left:10px }
+#apresentacoes ul.list li a { color:#1e1615; text-decoration:none }
+#apresentacoes ul.list li a:hover { text-decoration:underline }
+
+/**** downloads - novo ****/
+#downloads h1 { font-size:30.7px; color:#302622; text-transform:uppercase; font-style:normal; letter-spacing:-0.5px; margin-bottom:20px }
+#downloads ul { list-style-type:none; font-style:normal }
+#downloads ul li { border-bottom:1px solid #533806; cursor:pointer }
+#downloads ul li span { padding:0 8px; display:block }
+#downloads ul li:hover span { background:#FADE7C }
+#downloads ul li ul { line-height:160%; margin:0 0 10px 20px ; display:none }
+#downloads ul li ul li { font-style:italic; font-size:14px; border:none; padding:0 8px; line-height:150% }
+#downloads ul li ul li:hover, #downloads ul li ul li.active { background:#FCC609 }
+#downloads ul li a { color:#533806; text-decoration:none; font-weight:normal; display:block }
+#downloads ul li.active span { background:#FCC609 }
+#downloads ul li.active.parent span { background:#FADE7C }
+#downloads ul li.active ul { display:block }
+#downloads .white { background:#FFF; border-left:5px solid #FCC609; min-height:320px; margin-left:0; font-size:14px; color:#9d9d9e; line-height:normal; letter-spacing:normal }
+#downloads .white .pd { padding:20px }
+#downloads .white a { color:#9d9d9e; text-decoration:none }
+#downloads .white figure img { width:208px }
+#downloads .white figcaption { margin:8px 0 30px 0; text-align:center }
+#downloads .bts { margin-top:4px }
+#downloads .bts a { display:block; float:left; width:49%; background:#FCC609; color:#FFF; font-style:normal; padding:6px 0 4px 0; text-align:center; margin-bottom:4px }
+#downloads .bts a:first-child { margin-right:2% }
+#downloads .bts a:hover { background:#B4880C }
+#downloads .bts a:visited, #downloads .bts a.visited { background:#9D9D9C }
+
+
+/**** visitacao ****/
+#visitacao { background-color:#fff1c7; background:url(../img/cervejaria/cervejaria-bg.jpg) center top no-repeat; background-size:cover; line-height:200%; text-align:justify; font-size:16.9px }
+#visitacao .full { background-color:#ffb800 }
+#visitacao .padd { padding:60px 0 }
+#visitacao .grid5 { width:40%; margin:1% 5% }
+#visitacao .indent { padding-left:45px }
+#visitacao .agenda h2.marrom { color:#bc8805; font-size:38px; margin-top:60px }
+#calendar { background-color:#FFF; padding:20px; border-radius:10px; margin-top:30px; min-height:480px }
+#calendar td { line-height:normal; font-size:15px; border-color:#b2b2b2; }
+//#calendar .fc-body .fc-day-number { opacity:0.3 }
+//#calendar .fc-body .fc-mon { background-color:#FFF; opacity:1 }
+.fc-unthemed .fc-today { background-color:#FFF!important }
+#calendar .fc-festival { background-color:#fee8a3 }
+#calendar .fc-body .fc-other-month { opacity:0.3; background-color:#ececec; color:#ececec  }
+#calendar .fc-body .fc-disabled { opacity:0.3; background-color:#ececec!important; }
+#calendar .fc-body .fc-day-number { background:none!important }
+#calendar .fc-next-button { border:none; background:url(../img/visitacao/next-month.png) center no-repeat; box-shadow:none }
+#calendar .fc-prev-button { border:none; background:url(../img/visitacao/prev-month.png) center no-repeat; box-shadow:none }
+#calendar .fc-icon-right-single-arrow:after { content:'' }
+#calendar .fc-icon-left-single-arrow:after { content:'' }
+#calendar th { background-color:#fdd148; text-transform:uppercase; border-color:#b2b2b2; }
+#calendar h2 { color:#9a6328; text-transform:uppercase }
+#calendar .foot { margin-top:10px; color:#565655; }
+#calendar .foot select, #calendar .passo2 input, #calendar .passo2 select, #calendar .passo2 textarea { width:auto; height:auto; padding:0 0 0 5px; font-size:15px; font-style:normal; border-radius:2px; border-color:#b2b2b2; color:#565655 }
+#calendar .foot button, #calendar .passo2 button { border-radius:2px; font-size:14px; padding:0 30px; font-weight:normal; background:#fdd148; border:1px solid #b18f7a; display:none }
+#calendar .foot button:hover { background:#9a6328; color:#fdd148 }
+#calendar .fc-body .selected { background-color:#fdd148!important }
+#calendar .passo2 input, #calendar .passo2 textarea { padding:5px 2%; width:80%; margin:0 }
+#calendar .passo2 select { padding:4px 2%; width:80%; margin:0 }
+#calendar .passo2 strong { color:#bc8805 }
+#calendar .passo2 button { display:block }
+#calendar .passo2 .data { font-weight:bold }
+
+#erro { background-color:#C30; color:#FFF; padding:4px; text-align:center; display:none; margin:4px 0 6px; cursor:default }
+
+/**** tnav ****/
+#tnav { text-align:center; margin-bottom:50px }
+#tnav a { text-decoration:none; color:#bc8805 }
+#tnav a, #tnav strong { display:inline-block; margin:0 5px; padding:0 5px }
+
+/**** menu fixo ****/
+.menu-fixo #header { position:fixed; left:0px; top:0px; width:100%; z-index:3000 }
+@media only screen and (min-width : 769px) {
+	.menu-fixo { padding-top:192px!important }
+	.menu-fixo #header { height:60px }
+	.menu-fixo #header .grid3 { text-align:center }
+	.menu-fixo #header img { width:120px; height:auto }
+	.menu-fixo #menu { margin:19px 0 0 -40px; font-size:14px; text-align:left }
+	.swiper-container-horizontal>.swiper-pagination-bullets { bottom:45px }
+}
+
+
+/* Smartphones e iPads (portrait) ----------- */
+@media only screen and (max-width : 768px) and (orientation : portrait) {
+	body, html { min-width:100%; max-width:100%; width:100% }
+	.center { min-width:90%; max-width:90%; width:90%; }
+	.hr { width:80%; margin:60px auto }
+	iframe { max-width:100% }
+	input, select, textarea { font-size:16px; height:34px; width:90%; padding:0 5%; margin:0 }
+	h1 { font-size:36px }
+	#header { height:auto }
+	#header .center { width:100%; max-width:100% }
+	#header .left { width:38%; margin-left:1.5%; padding-left:45px }
+	#header .mobile { position:absolute; left:15px; top:35%; display:block }
+	#menu { display:none; position:absolute; left:0; width:100%; z-index:2001; margin-top:0; background-color:#1d1004; padding:16px 0 }
+	#menu li { display:block; text-align:center; margin:8px 0 }
+	#menu li a { padding:8px 0; display:block }
+	#menu li a:hover, #menu li.active a { border:none }
+	#social { height:30px; width:96px;
+		-moz-border-radius: 0 0 8px 8px;
+		-webkit-border-radius: 0 0 8px 8px;
+		border-radius: 0 0 8px 8px;
+	}
+	#social a { width:30px; height:30px; background-size:100px }
+	#social .face { background-position:0px -2px }
+	#social .tube { background-position:-34px -2px }
+	#social .mail { background-position:-66px -2px }
+	#news form { font-size:20px }
+	#news form input { width:77%; margin:0; padding:0 15% 0 5%; }
+	#news form button { top:inherit; bottom:1px; right:1.5%; font-size:20px; width:66px; height:34px }
+	
+	/**** home ****/
+	div.home { background:none; height:auto; padding:15px 0 30px 0!important }
+	div.home .banner { height:auto; width:23% }
+	div.home .banner img { height:auto; } 
+	
+	/**** cervejaria ****/
+	#cervejaria .bares .left, #cervejaria .right, #cervejaria .bares .left > div, #cervejaria .grid5,
+	#cervejaria .bares .right > div { display:block; padding-top:0; width:90%; float:none; margin:auto }
+	#cervejaria .padd { padding-top:20px }
+	#cervejaria .padd .grid5 img { margin-top:40px }
+	#cervejaria .bares .left h1 { margin-top:0 }
+	#cervejaria .bares .right h1 { margin-top:60px }
+	#cervejaria .bares > div { margin-bottom:40px }
+	#cervejaria .bares div > div > div { height:auto }
+	
+	/**** produtos ****/
+	#produtos #cycle-prev, #produtos #cycle-next { top:49px }
+	#produtos #cycle-prev img, #produtos #cycle-next img { width:35px; height:42px }
+	#produtos #banner .faixa .bg { height:42px }
+	#produtos #banner .grid4.left { margin:40px 0 0 0; text-align:center }
+	#produtos #banner .grid5.right { margin:15px 0 40px 0; text-align:center }
+	#produtos #banner, #produtos #banner .produto { height:auto; width:100% }
+	#produtos .depoimento blockquote { width:90%; float:none; margin-top:60px }
+	#produtos .depoimento blockquote blockquote { float:none }
+	#produtos .depoimento .foto { margin:40px 5% 0 }
+	#produtos .depoimento { padding-bottom:60px }
+	#produtos .infos .grid2 { background-size:60px; background-position:-30px 20px  }
+	#produtos .infos .info { background-position-x:-28px }
+	#produtos .infos .ingre { background-position-x:-22px }
+	#produtos .infos .harmo { background-position:-20px 27px }
+	#produtos .infos .envaza { background-position-x:-31px }
+	#produtos #familia { height:auto; padding:30px 0 }
+	#produtos #familia .grid1 { width:24%; margin:15px 4% }
+	#produtos #familia .grid1 img { margin:0!important }
+	
+	/**** brot ****/
+	#brot #info { height:auto; padding-bottom:40px }
+	#brot #info #pao { display:none }
+	#brot #info .logo { margin-top:60px }
+	#brot .produtos img { margin-top:-35px }
+	
+	/**** armazem ****/
+	#armazem .franchising .left, #armazem .right, #armazem .franchising .left > div, #armazem .grid5,
+	#armazem .franchising .right > div { display:block; padding-top:0; width:90%; float:none; margin:auto }
+	#armazem .padd { padding-top:20px }
+	#armazem .padd .grid5 img { margin-top:40px }
+	#armazem .franchising .left h1 { margin-top:0 }
+	#armazem .franchising .right h1 { margin-top:60px }
+	#armazem .franchising > div { margin-bottom:40px }
+	#armazem .franchising br { display:none }
+	
+	/**** onde encontrar ****/
+	#onde-encontrar select { margin-bottom:10px }
+	#onde-encontrar #results > div { display:block; margin-top:60px; width:100% }
+	#onde-encontrar #results h3 { font-size:34px }
+	
+	/**** imprensa ****/
+	#imprensa strong { display:block }
+	
+	/**** noticias ****/
+	#noticias .chamada, #noticias .chamada img { width:98%; max-width:98% }
+	#noticias .conteudo .grid4, #noticias .conteudo .grid7 { width:100% }
+	#noticias .conteudo .grid4 img { margin:0 0 20px 0 }
+	
+	/**** contato ****/
+	form label { text-align:left; display:block }
+	#contato form textarea { padding:10px 5% }
+	#contato form button { margin-right:0; margin-bottom:60px }
+	#contato .g-recaptcha, .optin { margin-right:0 }
+	#contato address { margin-top:60px }
+	#contato address .grid5 { text-align:left }
+	#contato address .grid7 div { border:none; padding:0 }
+	#contato address .grid7 span { display:none }
+	
+	/**** menu mobile ****/
+	body.menu { background:#1d1004 }
+	body.menu .section { display:none }
+	body.menu #header { display:block }
+	.menu-fixo { padding-top:70px!important }
+	
+	/**** visitacao ****/
+	#visitacao .grid5 { width:100%; margin:1% 0% }
+	#calendar .passo2 input, #calendar .passo2 textarea { width:96%; padding:5px 2%; }
+	
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+	/*div.home .banner img { margin:40px 0 15px!important }*/
+	#header .mobile { top:40% }
+	#header .mobile img { width:32px; height:32px }
+	#produtos #banner .grid4.left { width:48%; margin-left:5%; padding-bottom:40px }
+	#produtos #banner .grid5.right { margin-right:5% }
+	#produtos #cycle-prev, #produtos #cycle-next { top:245px }
+	#produtos .infos .grid2 { background-size:70px; background-position:-30px 15px  }
+	#produtos .infos .grid2 { width:39%; }
+	#produtos #familia .grid2 { width:8% }
+	#produtos .medalhas img { margin:20px 0 0 0 }
+	#brot #info #pao { display:block; width:70%; margin-left:-15% }
+	#brot #info .grid6:first-child { width:38% }
+	#brot #info .grid6:last-child { width:55%; float:right }
+	#onde-encontrar select { margin-bottom:0; width:40% }
+	#contato .grid6 { width:100%; display:block }
+	#downloads .grid6 { width:90% }
+	#news form input { width:30%; margin-left:1% }
+	#news form button { right:1% }
+	#footer .center { line-height:normal }
+	#footer .sebeber { padding-left:22px }
+	.menu-fixo { padding-top:146px!important }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 480px) and (orientation : portrait) {
+	div.home .banner { top:0; width:100%; text-align:center; margin:10px 0!important }
+	#produtos .infos h2 { margin:30px 0 10px }
+	#produtos .infos { padding:30px 0 60px 0 }
+	#produtos .infos .grid2 { width:83%; padding-left:17% }
+	#produtos #familia .dir3 { clear:both }
+	#produtos .medalhas { text-align:center }
+	#produtos .medalhas img { margin:0 10px }
+	#downloads ul { padding-left:0 }
+	#downloads ul ul { padding-left:28px }
+	#downloads small { display:none }
+	#footer { padding-bottom:25px }
+	#footer, #footer .center { height:auto }
+	#footer .center div { position:relative!important; left:0!important; top:0!important; text-align:center!important; border:none!important; padding:4px 0 }
+	#footer .center .sebeber { padding:0 }
+	#idade .header { height:140px!important; padding-top:60px!important; margin-bottom:60px }
+	#idade form img { display:none }
+	#idade form button { margin-top:15px }
+	#idade #aviso > div { margin-bottom:30px }
+}
+
+/* Smartphones e iPads (landscape) ----------- */
+@media only screen and (max-device-width : 1024px) and (orientation : landscape) {
+	#header { height:auto }
+	#header .center { width:95% }
+	#header .grid4 { width:24% }
+	#header .grid8 { width:74% }
+	div.home { background:none }
+	div.home .banner { background:none!important }
+	.menu-fixo #header { display:none }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 1024px) and (orientation : landscape) {
+	.menu-fixo #header { display:block }
+}
+
+/**** zoom em monitores menores ****/
+@media only screen and (min-width : 468px) and (max-width : 1500px) and (orientation : landscape) {
+	body,html { zoom:94% }
+}
+
+/**** zoom no iphone4 ****/
+@media only screen and (max-width : 359px) {
+	body,html { zoom:94% }
+}
+
