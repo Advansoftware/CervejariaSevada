@@ -13,10 +13,11 @@
 		<meta NAME="LANGUAGE" CONTENT="PT" >
 		<!-- Fim das meta Tags -->	
 
-		<title>Câmara Municipal de Brazópolis - <?php echo $title;?></title>
+		<title>Cervejaria Sevda - <?php echo $title;?></title>
 		<?php ini_set("allow_url_fopen", 1);?>
+		<?= link_tag('assets/css/animate.css') ?>
 		<?= link_tag('assets/css/bootstrap.min.css') ?>
-		<?= link_tag('assets/css/camara.css') ?>
+		<?= link_tag('assets/css/sevda.css') ?>
 		<?= link_tag('assets/css/style.css') ?>
 		<?= link_tag('assets/css/normalize.css') ?>
 		<?= link_tag('assets/css/all.css') ?>

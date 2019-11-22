@@ -33,7 +33,7 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
-        <a class="nav-link" href="<?php echo base_url();?>licitacoes?id=3">Visitação</a>
+        <a class="nav-link" href="<?php echo base_url();?>visitacao?id=3">Visitação</a>
       </li>
       <?php
       if($get_id==4):
