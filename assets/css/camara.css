@@ -206,6 +206,17 @@ width:100%;
   bottom: 0px;
   background-color: rgba(0,0,0,.5);
 }
+.carousel-caption {
+	position: absolute;
+	right: 15%;
+	bottom: 12rem;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+}
 .caption-noticias-top{
   left: 0px;
   right: 0px;

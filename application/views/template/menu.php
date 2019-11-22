@@ -15,7 +15,7 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
-          <a class="nav-link" href="<?php echo base_url();?>">Inicio<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="<?php echo base_url();?>">Cervejaria<span class="sr-only">(current)</span></a>
       </li>
       <?php
         if($get_id==2):
@@ -24,7 +24,7 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
-        <a class="nav-link" href="<?php echo base_url();?>historia?id=2">Histórico</a>
+        <a class="nav-link" href="<?php echo base_url();?>historia?id=2">Produtos</a>
       </li>
       <?php
       if($get_id==3):
@@ -33,7 +33,7 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
-        <a class="nav-link" href="<?php echo base_url();?>licitacoes?id=3">Licitações</a>
+        <a class="nav-link" href="<?php echo base_url();?>licitacoes?id=3">Visitação</a>
       </li>
       <?php
       if($get_id==4):
@@ -42,15 +42,8 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
-        <a class="nav-link" href="<?php echo base_url();?>noticias?id=4">Notícias</a>
+        <a class="nav-link" href="<?php echo base_url();?>noticias?id=4">Contato</a>
       </li>
-       <?php
-      if($get_id>4 && $get_id < 10):
-        ?>
-        <li class="nav-item dropdown active">
-        <?php else : ?>
-         <li class="nav-item dropdown">
-        <?php endif;?>
 	</ul>
   </div>
 </nav>

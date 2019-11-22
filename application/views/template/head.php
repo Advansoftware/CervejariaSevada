@@ -4,10 +4,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#16489C"/>
-		<meta name="description" content="Acesse o site oficial da câmara de Brazópolis e fique por dentro das últimas notícias, licitações, sessões da camara, Pedidos dos vereadores, infomção sobre os vereadores, recursos para contato e muito mais.">
-		<meta property="og:title" content="Câmara Municipal De Brazópolis - Minas Gerais" />
-		<meta NAME="KEYWORDS" CONTENT="Brazópolis, Brasópolis, Câmara Municipal, Câmara, Camara Brasópolis, Câmara Brazópolis, Câmara Municipal Brasópolis" >
-		<meta property="og:description" content="Acesse o site oficial da câmara de Brazópolis e fique por dentro das últimas notícias, licitações, sessões da camara, Pedidos dos vereadores, infomção sobre os vereadores, recursos para contato e muito mais." />
+		<meta name="description" content="Acesse o site oficial da Cervejaria Sevda e fique por dentro das nossas cervejas artesanais, agende sua visita a cervejaria e muito mais.">
+		<meta property="og:title" content="Cervejaria Sevda - Minas Gerais" />
+		<meta NAME="KEYWORDS" CONTENT="Cervejaria, Brasópolis, Sevda, Cervejaria Brazopolis, Sevda Servejaria, Brazópolis" >
+		<meta property="og:description" content="Acesse o site oficial da Cervejaria Sevda e fique por dentro das nossas novas cervejas artesanais, agende sua visita a cervejaria e muito mais." />
 		<meta property="og:image" content="<?php echo base_url();?>content/imagens/cabecalho.gif" />	
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
 		<meta NAME="LANGUAGE" CONTENT="PT" >
@@ -27,24 +27,6 @@
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/bootstrap.min.js'></script>
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/pace.min.js'></script>
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/js.js'></script>
-		<script type="text/javascript">
-			var _paq = _paq || [];
-			_paq.push(['trackPageView']);
-			_paq.push(['enableLinkTracking']);
-			(function() {
-			var u="http://cluster-piwik.locaweb.com.br/";
-			_paq.push(['setTrackerUrl', u+'piwik.php']);
-			_paq.push(['setSiteId', 25050]);
-			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-			})();
-			$('body').on('mouseenter mouseleave','.dropdown',function(e){
-				var _d=$(e.target).closest('.dropdown');_d.addClass('show');
-				setTimeout(function(){
-				_d[_d.is(':hover')?'addClass':'removeClass']('show');
-				},300);
-				});
-		</script>
 	</head>
 <body id="conteiner">
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
