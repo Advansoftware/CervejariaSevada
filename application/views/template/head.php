@@ -29,36 +29,36 @@
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/pace.min.js'></script>
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/js.js'></script>
 	</head>
-<body id="conteiner">
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-    	<div class="modal-header bg-info">
-    		<h5 class="modal-title text-white" style="text-shadow: 0px 0px 2px rgba(0,0,0,.5)">Pedidos de Providência</h5>
-    		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button></div>
-    	<div class="bg-light" id="RegistrosPagina">
-    		
-    	</div>
-    </div>
-  </div>
-</div>
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+	<body id="conteiner">
+		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header bg-info">
+						<h5 class="modal-title text-white" style="text-shadow: 0px 0px 2px rgba(0,0,0,.5)">Pedidos de Providência</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="bg-light" id="RegistrosPagina">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-  attribution=setup_tool
-  page_id="1156837047748369"
-  theme_color="#0084ff"
-  logged_in_greeting="Ola, Como posso ajudar você?"
-  logged_out_greeting="Ola, Como posso ajudar você?">
-</div>
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat"
+		attribution=setup_tool
+		page_id="1156837047748369"
+		theme_color="#0084ff"
+		logged_in_greeting="Ola, Como posso ajudar você?"
+		logged_out_greeting="Ola, Como posso ajudar você?">
+		</div>
