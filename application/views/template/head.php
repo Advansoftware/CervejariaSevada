@@ -3,7 +3,7 @@
 		<!-- Meta Tags utilizadas no site -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
-		<meta name="theme-color" content="#16489C"/>
+		<meta name="theme-color" content="#ab6d0f"/>
 		<meta name="description" content="Acesse o site oficial da Cervejaria Sevda e fique por dentro das nossas cervejas artesanais, agende sua visita a cervejaria e muito mais.">
 		<meta property="og:title" content="Cervejaria Sevda - Minas Gerais" />
 		<meta NAME="KEYWORDS" CONTENT="Cervejaria, Brasópolis, Sevda, Cervejaria Brazopolis, Sevda Servejaria, Brazópolis" >
@@ -15,7 +15,6 @@
 
 		<title>Cervejaria Sevda - <?php echo $title;?></title>
 		<?php ini_set("allow_url_fopen", 1);?>
-		<?= link_tag('assets/css/animate.css') ?>
 		<?= link_tag('assets/css/bootstrap.min.css') ?>
 		<?= link_tag('assets/css/sevda.css') ?>
 		<?= link_tag('assets/css/style.css') ?>
@@ -23,11 +22,13 @@
 		<?= link_tag('assets/css/all.css') ?>
 		<?= link_tag('assets/css/bootstrap.offcanvas.min.css') ?>
 		<?= link_tag('content/imagens/logo_oficial.jpg', 'shortcut icon', 'image/png') ?>
+		<?= link_tag('assets/css/animate.css') ?>
 		<script type="text/javascript" language="javascript" src='<?php echo base_url();?>assets/js/jquery-3.1.1.min.js'></script>
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/bootstrap.offcanvas.js'></script>
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/bootstrap.min.js'></script>
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/pace.min.js'></script>
 		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/js.js'></script>
+		<script src="https://kit.fontawesome.com/92c455016e.js" crossorigin="anonymous"></script>
 	</head>
 	<body id="conteiner">
 		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">

@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 require_once("Geral.php");
 
-	class Historia extends Geral {
+	class Produtos extends Geral {
 	public function __construct()
 		{
 			parent::__construct();
@@ -10,9 +10,9 @@ require_once("Geral.php");
 
 		public function index()
 		{
-			$data['title'] = "Historia";
+			$data['title'] = "Produtos";
 			$this->inicio($data,0);
-			$this->load->view('historia');
+			$this->load->view('produtos');
 			$this->load->view('template/footer');
 		}
 }

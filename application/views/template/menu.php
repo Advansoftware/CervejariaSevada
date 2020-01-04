@@ -11,7 +11,7 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
 
         if($get_id==null):
         ?>
-        <li class="nav-item  active">
+        <li class="nav-item bounceIn active">
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
@@ -20,16 +20,16 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
       <?php
         if($get_id==2):
         ?>
-        <li class="nav-item  active">
+        <li class="nav-item bounceIn active">
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
-        <a class="nav-link" href="<?php echo base_url();?>historia?id=2">Produtos</a>
+        <a class="nav-link" href="<?php echo base_url();?>produtos?id=2">Produtos</a>
       </li>
       <?php
       if($get_id==3):
         ?>
-        <li class="nav-item  active">
+        <li class="nav-item bounceIn active">
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
@@ -38,11 +38,11 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
       <?php
       if($get_id==4):
         ?>
-        <li class="nav-item  active">
+        <li class="nav-item bounceIn active">
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
-        <a class="nav-link" href="<?php echo base_url();?>noticias?id=4">Contato</a>
+        <a class="nav-link" href="<?php echo base_url();?>contato?id=4">Contato</a>
       </li>
 	</ul>
   </div>

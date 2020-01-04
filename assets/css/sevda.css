@@ -13,12 +13,37 @@ body {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
     z-index: 100;
 }
-
-.block.block-bg-noise,
-.block.block-bg-noise:after {
-    background: #ededed url(../../content/imagens/bg_noise-bg.png) left top repeat;
+/*Sprite_icon */
+.icon-sprite{
+    background-image: url("../../content/imagens/sprite_icon.png");
+    background-repeat: no-repeat;
+}
+.abv{
+    width: 57px;
+    height: 54px;
+    background-position-y: 0px;
+}
+.grau{
+    width: 57px;
+    height: 54px;
+    background-position-y: -64px;
+}
+.ibu{
+    width: 57px;
+    height: 54px;
+    background-position-y: -125px;
+}
+.ebc{
+    width: 57px;
+    height: 54px;
+    background-position-y: -193px;
 }
 
+
+/* Fim dos icones */
+#info{
+    background: #311607;
+}
 .block.block-pd-sm {
     padding: 2em 0;
 }
@@ -123,6 +148,7 @@ footer {
 
 .menuFixo {
     background: black;
+    border-bottom: 2px solid #d2ab68;
     position: fixed;
     top: 0;
     width: 100%;
@@ -131,7 +157,7 @@ footer {
 .navbar-nav .active>.nav-link {
     color: #ffc107 !important;
     border: 1px solid transparent;
-    border-bottom: 3px solid #d2ab68;
+    border-bottom: 3px solid #dd362d;
 }
 
 .navbar-light .nav-link {
@@ -251,7 +277,7 @@ footer {
 .carousel-caption {
     position: absolute;
     right: 15%;
-    bottom: 12rem;
+    bottom: 5rem;
     left: 15%;
     z-index: 10;
     padding-top: 20px;

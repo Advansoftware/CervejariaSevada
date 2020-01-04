@@ -1,38 +1,28 @@
-
-
-<div class="block block-pd-sm block-bg-noise container-fluid" id="info">
-      <div class="conteiner row mr-auto text-center">
-        <div class="col" id="facebook">
-         <a href="https://www.facebook.com/CamaraMunicipaldeBrazopolis/" target="_blank">
-           <span class="fa fa-thumbs-up fa-2x social-icon facebook"></span>
-            <p></p>
-           <h5>Facebook</h5>
-           <p>
-             Curta nossa pagina no Facebook
-           </p>
-         </a>
+<div class="container-fluid" id="info">
+  <div class="row pt-3 text-center">
+    <div class="col-md-4 col-sm-12 text-white my-2">
+      <h4 style="color: #fffddd!important; text-shadow: 1px 2px 2px #1b0b02;">Siga nossas redes sociais</h4>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="row">
+        <div class="col my-1">
+          <a href="https://www.facebook.com/CamaraMunicipaldeBrazopolis/" target="_blank">
+            <span class="fab fa-facebook social-icon facebook" title="Facebook"></span>
+        </a>
         </div>
-		  <div  class="col" >
-				  <img src="<?=base_url()?>/content/imagens/outubrorosa.png" alt="">
-				  <p></p>
-				  <p>
-
-				  </p>
-			  </a>
-		  </div>
-
-        <div  class="col" id="youtube">
+        <div class="col my-1">
           <a href="https://www.youtube.com/channel/UCvIXGcq_hf9io1HpZGOCOuA" target="_blank">
-           <span class="fab fa-youtube fa-2x social-icon youtube"></span>
-           <p></p>
-           <h5>Youtube</h5>
-           <p>
-              Acompanhe nosso canal no Youtube
-           </p>
-         </a>
-       </div>
+            <span class="fab fa-instagram social-icon btn-instagram" title="Instagram"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12 text-white mt-3">
+      <h5 style="color: #fffddd!important; text-shadow: 1px 2px 2px #1b0b02;text-transform: uppercase">Se Beber não dirija.</h5>
+    </div>
   </div>
 </div>
+
 
 
 

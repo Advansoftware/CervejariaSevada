@@ -17,7 +17,7 @@
 							&nbsp;Pousada Rural Candelária - Brazópolis/MG - Luminosa - CEP: 37535-000
 							<br />&nbsp;&nbsp;
 							<i class="fas fa-phone-volume"></i>
-							&nbsp;Tel.: (35) 9.9122-0077 / 3641-1901 &nbsp;&nbsp;
+							&nbsp;Tel.: (35) 9.9122-0077 / (35) 3641-1901 &nbsp;&nbsp;
 							<i class="fas fa-envelope"></i>  &nbsp;cervejariasevda@hotmail.com
 							<br />Visita Somente Com Agendamento.
 							</p>

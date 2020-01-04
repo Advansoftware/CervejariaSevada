@@ -2,20 +2,22 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 require_once("Geral.php");
 
-class Home extends Geral
+class Contato extends Geral
 {
 	public function __construct()
 	{
 		parent::__construct();
 	}
 
-	public function index(){
-
-		$dados['title'] = "Bem Vindo";
-		$this->inicio($dados,1,1);
-		$this->load->view('home/home');
+	public function index($page = 1, $noticia_id = 0)
+	{
+		$dados['title'] = "Contato";
+		$this->inicio($dados);
+		$this->load->view('contato/contato');
 		$this->load->view('home/final');
 		$this->load->view('template/footer');
+
 	}
+
 }
 ?>
