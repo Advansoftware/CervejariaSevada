@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 @import url("https://wrappixel.com/demos/admin-templates/material-pro/minisidebar/css/spinners.css");
-@import url("https://wrappixel.com/demos/admin-templates/material-pro/minisidebar/css/animate.css");
 /*
  * Table Of Content
  *
@@ -1326,7 +1325,8 @@ Buttons
 
 .btn-instagram {
   color: #ffffff;
-  background-color: #3f729b; }
+  background-color: #f05161;
+  border-color: #f05161;
 
 .btn-pinterest {
   color: #ffffff;

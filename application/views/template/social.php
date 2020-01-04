@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="col-md-4 col-sm-12 text-white mt-3">
+    <div class="col-md-4 col-sm-12 text-white my-3">
       <h5 style="color: #fffddd!important; text-shadow: 1px 2px 2px #1b0b02;text-transform: uppercase">Se Beber não dirija.</h5>
     </div>
   </div>
