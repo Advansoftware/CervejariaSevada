@@ -1,6 +1,6 @@
 
 <nav class="navbar navbar-inverse navbar-expand-md navbar-light bottom-box menuFixo">
-  <a class="navbar-brand" href="<?php echo base_url();?>"><img src="<?php echo base_url();?>content/imagens/LOGOMARCA.png" id="logo" alt="Câmara Municipal De Brazópolis" title="Câmara Municipal De Brazópolis"></a>
+  <a class="navbar-brand" href="<?php echo base_url();?>"><img src="<?php echo base_url();?>content/imagens/LOGOMARCA.png" id="logo" class="large" alt="Cervejaria Sevda" title="Cervejaria Sevda"></a>
 <button type="button" class="navbar-toggler border-warning text-light offcanvas-toggle offcanvas-toggle-close"
 data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span class="sr-only">Toggle navigation</span>
 </button>
@@ -47,6 +47,6 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
 	</ul>
   </div>
 </nav>
-<div class="mt-5">
+<div class="mt-4 bg-dark">
 	<br/>
 </div>

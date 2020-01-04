@@ -4,11 +4,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#ab6d0f"/>
-		<meta name="description" content="Acesse o site oficial da Cervejaria Sevda e fique por dentro das nossas cervejas artesanais, agende sua visita a cervejaria e muito mais.">
-		<meta property="og:title" content="Cervejaria Sevda - Minas Gerais" />
+		<meta name="description" content="Acesse o site oficial da Cervejaria Sevda e fique por dentro das nossas cervejas artesanais na rota do Caminho da Fé, agende sua visita a cervejaria e muito mais.">
+		<meta property="og:title" content="Cervejaria Sevda - Minas Gerais, na rota do Caminho da Fé" />
 		<meta NAME="KEYWORDS" CONTENT="Cervejaria, Brasópolis, Sevda, Cervejaria Brazopolis, Sevda Servejaria, Brazópolis" >
-		<meta property="og:description" content="Acesse o site oficial da Cervejaria Sevda e fique por dentro das nossas novas cervejas artesanais, agende sua visita a cervejaria e muito mais." />
-		<meta property="og:image" content="<?php echo base_url();?>content/imagens/cabecalho.gif" />	
+		<meta property="og:description" content="Acesse o site oficial da Cervejaria Sevda e fique por dentro das nossas novas cervejas artesanais na rota do Caminho da Fé, agende sua visita a cervejaria e muito mais." />
+		<meta property="og:image" content="<?php echo base_url();?>content/imagens/sevda_face.png" />	
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
 		<meta NAME="LANGUAGE" CONTENT="PT" >
 		<!-- Fim das meta Tags -->	

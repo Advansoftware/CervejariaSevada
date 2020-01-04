@@ -36,9 +36,15 @@ body {
 .ebc{
     width: 57px;
     height: 54px;
-    background-position-y: -193px;
+    background-position-y: -188px;
 }
-
+.display-4, .display-5{
+    font-family:"Bourbon W00 Regular" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 /* Fim dos icones */
 #info{
@@ -86,8 +92,13 @@ body {
     margin-top: 5rem;
 }
 
-#logo {
-    width: 250px;
+.large {
+    width: 200px;
+    transition: linear .1s;
+}
+.small{
+    width: 115px;
+    transition: linear .1s;
 }
 
 .page-link:focus {

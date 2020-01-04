@@ -46,3 +46,10 @@ function envia_visita(){
         alert("Falta Preencher alguns dados");
     }
 }
+$(document).on("scroll",function(){
+    if($(document).scrollTop()>100){ //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
+        $("#logo").removeClass("large").addClass("small"); //TROCA P CLASSE MENOR
+    } else{
+        $("#logo").removeClass("small").addClass("large"); //VOLTA P MENU GRANDE ORIGINAL
+    }
+});

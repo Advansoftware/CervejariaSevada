@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+@import url("../webfonts/Bourbon.css");
 @import url("https://wrappixel.com/demos/admin-templates/material-pro/minisidebar/css/spinners.css");
 /*
  * Table Of Content
@@ -24,7 +25,11 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   overflow-x: hidden;
-  font-weight: 300; }
+  font-weight: 300;
+}
+
+}
+
 .small{
 	color: #99abb4;
 	font-size: 11px;
@@ -32,7 +37,8 @@ body {
 html {
   position: relative;
   min-height: 100%;
-  background: #ffffff; }
+  background: #ffffff;
+ }
 
 a:hover, a:focus {
   text-decoration: none; }
@@ -384,7 +390,7 @@ Text Colors
   color: #99abb4 !important; }
 
 .text-warning {
-  color: #ffb22b !important; }
+  color: #844917 !important; }
 
 .text-success {
   color: #26c6da !important; }
