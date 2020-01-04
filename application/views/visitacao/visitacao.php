@@ -1,3 +1,8 @@
+<div class="container-fluid p-0">
+	<div class="row">
+	<img src="<?=base_url()?>/content/imagens/top_visita.png" class="w-100 no-gutters" alt="">
+	</div>
+</div>
 <div class="container clearfix mb-5">
 		<h1 class="display-4 text-center text-warning">Agendar Visita</h1>
 	<div class="row">

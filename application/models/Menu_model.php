@@ -5,10 +5,5 @@
 			{
 				$this->load->database();
 			}
-
-		public function get_menu(){
-			$this->db->select('*');
-			return $this->db->get('menu')->result();
-		}	
 }
 ?>

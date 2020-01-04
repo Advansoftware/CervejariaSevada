@@ -27,9 +27,6 @@ body {
   overflow-x: hidden;
   font-weight: 300;
 }
-
-}
-
 .small{
 	color: #99abb4;
 	font-size: 11px;
@@ -1333,7 +1330,7 @@ Buttons
   color: #ffffff;
   background-color: #f05161;
   border-color: #f05161;
-
+}
 .btn-pinterest {
   color: #ffffff;
   background-color: #cb2027; }
