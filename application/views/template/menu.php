@@ -47,6 +47,6 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
 	</ul>
   </div>
 </nav>
-<div class="mt-4 bg-dark">
+<div class="bg-dark">
 	<br/>
 </div>

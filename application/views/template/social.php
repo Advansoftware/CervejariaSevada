@@ -6,12 +6,12 @@
     <div class="col-md-4 col-sm-12">
       <div class="row">
         <div class="col my-1">
-          <a href="https://www.facebook.com/cervejariasevda" target="_blank">
+          <a href="https://www.facebook.com/cervejariasevda" target="_blank" rel="noreferrer">
             <span class="fab fa-facebook social-icon facebook" title="Facebook"></span>
         </a>
         </div>
         <div class="col my-1">
-          <a href="https://www.instagram.com/cervejariasevda/" target="_blank">
+          <a href="https://www.instagram.com/cervejariasevda/" target="_blank" rel="noreferrer">
             <span class="fab fa-instagram social-icon btn-instagram" title="Instagram"></span>
           </a>
         </div>
