@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 	<head> 
 		<!-- Meta Tags utilizadas no site -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">

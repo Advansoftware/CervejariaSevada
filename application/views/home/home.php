@@ -5,12 +5,12 @@
 				<p class="text-justify">Palavra de origem turca que significa <b>‘Amor’</b>, o profundo amor.<br> Pelo próximo, por alguém especial, pela cerveja artesanal, pela natureza e energia das montanhas, pelos valores da vida. Somos uma micro cervejaria localizada em Luminosa/MG, em um vale rodeado pelas montanhas da Serra da Mantiqueira, na <b>Hospedaria Rural Candelária</b>, na rota do Caminho da Fé.</p>
 	</div>
 	<div class="col-md-4">
-		<img src="<?=base_url()?>/content/imagens/sevda.png" class="img-fluid d-sm-block d-none" alt="">
+		<img src="<?=base_url()?>/content/imagens/sevda.png" class="img-fluid d-sm-block d-none" alt="cervejaria sevda logotipo">
 	</div>
   </div>
   <div class="row mb-5">
 		<div class="col-md-7">
-			<img src="<?=base_url()?>/content/imagens/1slide.jpg" class="img-fluid mb-4">
+			<img src="<?=base_url()?>/content/imagens/1slide.jpg" class="img-fluid mb-4" alt="Sevda Nossa Fabrica">
 		</div>
 		<div class="col-md-4 justify-content-center mb-4 font-family:'Brandon Grotesque Light'">
 			<p class="text-justify">
