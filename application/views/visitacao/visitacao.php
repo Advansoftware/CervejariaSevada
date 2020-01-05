@@ -16,7 +16,7 @@
 					</div>
 					<div class="card-body">
 						<div class="card-text mb-3">
-							Olá! Preencha as informações abaixo e clique em enviar para abrir a tela de envio para nosso whatsapp.
+							<p class="text-justify">Olá! Preencha as informações abaixo e clique em enviar para abrir a tela de envio para nosso whatsapp.</p>
 						</div>
 							<form method="post" class="form-material">
 								<div class="form-row">
