@@ -24,7 +24,8 @@
 		<?= link_tag('assets/css/bootstrap.offcanvas.min.css') ?>
 		<?= link_tag('content/imagens/logo_oficial.jpg', 'shortcut icon', 'image/png') ?>
 		<?= link_tag('assets/css/animate.css') ?>
-		<script type="text/javascript" language="javascript" src='<?php echo base_url();?>assets/js/LAB.js'></script>~
+		<script type="text/javascript" language="javascript" src='<?php echo base_url();?>assets/js/LAB.js'></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=85a50ed1d609aad22f0dac1ac70aeb642635fb88&callback=initMap"></script>
 		<script>
 				$LAB.script('<?php echo base_url();?>assets/js/jquery-3.1.1.min.js').wait()
 				.script('<?php echo base_url();?>assets/js/bootstrap.offcanvas.js').wait()
