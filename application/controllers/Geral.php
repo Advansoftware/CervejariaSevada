@@ -32,5 +32,11 @@
 			}
 
 		}
+		public function validaIdade(){
+			$getIdade = $this->session->userdata('idade');
+			if($getIdade<18 || empty($getIdade)){
+				redirect("idade/");
+			}
+		}
 	}
 ?>

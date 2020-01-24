@@ -67,7 +67,21 @@ function validaIdade(){
     var ano = idade[0];
     var idade = idades(ano, mes, dia);
     if(idade>= 18 && pega != ""){
-        window.location.href = base_url+"home";
+
+        var fd = new FormData();
+        fd.append('getsIdade', idade);
+            $.ajax({
+                method: "POST",
+                url: base_url+"/idade/pegaidade",
+                dataType: 'text',
+                cache: false,
+                contentType: false,
+                processData: false,
+                data: fd,
+                type: 'post'
+            }).done(function(html) {
+                window.location.href=base_url+"home";
+            });
     }
     else if(pega == ""){
         alert("Por favor, Digite sua Data de Nacimento");

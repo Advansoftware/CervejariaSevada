@@ -7,6 +7,7 @@ class Contato extends Geral
 	public function __construct()
 	{
 		parent::__construct();
+		$this->validaIdade();
 	}
 
 	public function index($page = 1, $noticia_id = 0)

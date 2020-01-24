@@ -6,6 +6,7 @@ require_once("Geral.php");
 	public function __construct()
 		{
 			parent::__construct();
+			$this->validaIdade();
 		}
 
 		public function index()
