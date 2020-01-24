@@ -45,7 +45,6 @@
 										
 											<button onclick="envia_visita()" class="btn btn-success btn-block col-md-3"><i class="fas fa-envelope"></i>&nbsp;Enviar</button>
 							</div>
-							<div id="map"></div>
 						</div>	
 					</div>
 				</div>
@@ -53,14 +52,3 @@
 		</div>
 	</div>
 </div>
-<script>
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
