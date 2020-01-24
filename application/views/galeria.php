@@ -77,7 +77,7 @@
 
   </style>
   <ul>
-   <li><a href="#img1"><img src="img/01.jpg" class="min"></a></li>
+   <li><a href="#img1"><img src="<?=base_url()?>content/imagens/1slide - Copia.jpg" class="min"></a></li>
    <li><a href="#img2"><img src="img/02.jpg" class="min"></a></li>
    <li><a href="#img3"><img src="img/03.jpg" class="min"></a></li>
    <li><a href="#img4"><img src="img/04.jpg" class="min"></a></li>
@@ -87,7 +87,7 @@
    <div class="box_img">
     <a href="#img4" class="btn" id="prev">&#171;</a>
     <a href="" class="btn" id="close">X</a>
-    <img src="img/01.jpg">
+    <img src="<?=base_url()?>content/imagens/1slide - Copia.jpg">
     <a href="#img2" class="btn" id="next">&#187;</a>
    </div>
   </div>
