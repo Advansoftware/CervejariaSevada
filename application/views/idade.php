@@ -1,5 +1,5 @@
 .<!doctype html>
-<html lang="en" style="background-color: black;">
+<html lang="pt-br" style="background-color: black;">
   <head>
     <title>Cervejaria Sevda - Bem Vindo</title>
     	<!-- Meta Tags utilizadas no site -->
@@ -28,19 +28,17 @@
       </div>
     </div>
     <div class="row mt-5 justify-content-center">
-      <div class="col-md-3 col-sm-12 text-center" id="texto">
-      <label for="idade">Digite Sua Data de Nascimento</label>
-        <div class="form-inline">
+      <div class="col-md-4 col-sm-12 text-center" id="texto">
+      <label for="idade" class="col-form-label">Digite Sua Data de Nascimento</label>
           <div class="form-group mb-2 mt-2">
             <div class="row">
-              <div class="col-md-6 col-sm-12 my-2">
-               <input type="date" class="form-control" id="idade" placeholder="Data de Nascimento">
+              <div class="col-md-7 col-sm-12 my-2 p-0  mx-auto">
+               <input type="date" class="form-control w-100" nome="idade" id="idade" placeholder="Data de Nascimento">
               </div>
-              <div class="col-md-6 col-sm-12 my-2">
-                <button onclick="validaIdade();" class="btn btn-success">Entrar No Site</button>
+              <div class="col-md-5 col-sm-12 my-2 mx-auto w-100">
+                <button onclick="validaIdade();" class="btn btn-success btn-block">Entrar No Site</button>
               </div>
             </div>
-          </div>
 </div>
       </div>
     </div>

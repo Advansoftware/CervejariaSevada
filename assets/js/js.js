@@ -4,7 +4,7 @@ $(document).ready(function() {
         $("#ajaxPagination a").click(function(e){
             e.preventDefault();
             var href =$(this).attr('href');
-            $("#RegistrosPagina").load(href); //eliminar ".conteudo" e trocar ".conteudo" por "#conteudo"
+            $("#RegistrosPagina").load(href);
         });
         $("#menuFixo").scrollTop()
 });

@@ -8,11 +8,11 @@
 			<div class="row">
 				<div class="col-md-12">
 			<!-- Inicio da pagina -->
-					<div class="card-columns text-center mt-5">
+				<div class="card-columns text-center mt-5" id="ajaxPagination">
 					<!-- inicia os cards-->
 						<div class="card mb-5">
 							<img src="<?=base_url();?>content/imagens/pilsen.png" class="card-img-top img-fluid">
-							<button class="btn btn-success btn-block card-footer" type="button" onclick="location.href='teclado.php'">Ver Mais</button>
+							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="visitacao/whatsapp" class="btn btn-success btn-block card-footer">Ver Mais</a>
 						</div>
 						<!-- finaliza os cards-->
 					
