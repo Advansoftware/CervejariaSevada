@@ -16,7 +16,6 @@ $('.scrollSuave').click(function() {
 	return false;
 });
 $(".page-item a").attr('class','page-link');
-	
 function envia_visita(){
 
     var entidade = $("#entidade").val();
@@ -44,6 +43,33 @@ function envia_visita(){
         });
     } else {
         alert("Falta Preencher alguns dados");
+    }
+}
+function idades(ano_aniversario, mes_aniversario, dia_aniversario) {
+    var d = new Date,
+        ano_atual = d.getFullYear(),
+        mes_atual = d.getMonth() + 1,
+        dia_atual = d.getDate(),
+        ano_aniversario = +ano_aniversario,
+        mes_aniversario = +mes_aniversario,
+        dia_aniversario = +dia_aniversario,
+        quantos_anos = ano_atual - ano_aniversario;
+    if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
+        quantos_anos--;
+    }
+    return quantos_anos < 0 ? 0 : quantos_anos;
+}
+function validaIdade(){
+    var idade = $('#idade').val().split('-');
+    var dia = idade[2];
+    var mes = idade[1];
+    var ano = idade[0];
+    var idade = idades(ano, mes, dia);
+    if(idade>= 18){
+        window.location.href = base_url+"home";
+    }
+    else{
+        $("#texto").html("Este site é recomendado para maiores de 18 anos. <br/> AGRADECEMOS A SUA VISITA!");
     }
 }
 $(document).on("scroll",function(){
