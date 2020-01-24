@@ -60,13 +60,17 @@ function idades(ano_aniversario, mes_aniversario, dia_aniversario) {
     return quantos_anos < 0 ? 0 : quantos_anos;
 }
 function validaIdade(){
-    var idade = $('#idade').val().split('-');
+    var pega =  $('#idade').val();
+    var idade = pega.split('-');
     var dia = idade[2];
     var mes = idade[1];
     var ano = idade[0];
     var idade = idades(ano, mes, dia);
-    if(idade>= 18){
+    if(idade>= 18 && pega != ""){
         window.location.href = base_url+"home";
+    }
+    else if(pega == ""){
+        alert("Por favor, Digite sua Data de Nacimento");
     }
     else{
         $("#texto").html("Este site é recomendado para maiores de 18 anos. <br/> AGRADECEMOS A SUA VISITA!");

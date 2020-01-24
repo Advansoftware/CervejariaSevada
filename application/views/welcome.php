@@ -20,9 +20,7 @@
     <link rel="stylesheet" href="<?=base_url()?>assets/css/sevda.css">
     <link rel="stylesheet" href="<?=base_url()?>assets/css/style.css">
   </head>
-  <body style="background-color: black; background-image: ;">
-
- 
+  <body style="background-color: black;">
   <div class="container-fluid text-light text-center">
     <div class="row justify-content-center">
       <div class="col-md-3 col-sm-12 mt-5">
