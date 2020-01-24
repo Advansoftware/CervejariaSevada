@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 require_once("Geral.php");
 
-	class Welcome extends Geral {
+	class Idade extends Geral {
 	public function __construct()
 		{
 			parent::__construct();
@@ -11,7 +11,7 @@ require_once("Geral.php");
 		public function index()
 		{
 			$data['title'] = "Bem Vindo";
-			$this->load->view('welcome');
+			$this->load->view('idade');
 		}
 }
 ?>
