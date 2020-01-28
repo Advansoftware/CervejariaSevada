@@ -17,38 +17,38 @@
             </div>
     </div>
     <!--Inicia os icones e descrição-->
-    <div class="row no-gutters">
+    <div class="row">
     <!-- coluna esquerda -->
-        <div class="col-md-2 col-sm-12 pt-3">
+        <div class="col-md-1 col-sm-12 pt-3 d-none d-sm-block"">
 
             <!--Icone/texto -->
-                <div class="col-md-12 col-sm-6 text-center">
-                    <p class="icon-sprite abv"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 20px;left: 16px;">52 %</span></p>    
+                <div class="col-md-12 col-sm-6 text-left">
+                    <p class="icon-sprite abv"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 20px;left: 27px;">52 %</span></p>    
                 </div>
             <!--Fim icone/texto-->
 
                 <!--Icone/texto -->
-                <div class="col-md-12 col-sm-6 text-center">
-                    <p class="icon-sprite grau"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 18px;left: 15px;">5-2</span></p>
+                <div class="col-md-12 col-sm-6 text-left">
+                    <p class="icon-sprite grau"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 18px;left: 30px;">5-2</span></p>
                 </div>
             <!--Fim icone/texto-->
 
                 <!--Icone/texto -->
-                <div class="col-md-12 col-sm-6 text-center">
-                    <p class="icon-sprite ibu"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 25px;left: 15px;">11.5</span></p>
+                <div class="col-md-12 col-sm-6 text-left">
+                    <p class="icon-sprite ibu"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 25px;left: 30px;">11.5</span></p>
             </div>
             <!--Fim icone/texto-->
 
                 <!--Icone/texto -->
-                <div class="col-md-12 col-sm-6 text-center">
-                    <p class="icon-sprite ebc"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 23px;left: 17px;">10</span></p>
+                <div class="col-md-12 col-sm-6 text-left">
+                    <p class="icon-sprite ebc"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 23px;left: 38px;">10</span></p>
             </div>
             <!--Fim icone/texto-->
         
     </div>
     <!--Fim coluna-->    
     <!-- coluna direita -->
-        <div class="col-md-10">
+        <div class="col-md-11">
             <div class="container-fluid">
                 <div class="row mt-3">
                     <div class="col-12 text-justify">

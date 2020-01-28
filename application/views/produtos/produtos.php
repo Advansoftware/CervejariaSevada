@@ -1,6 +1,6 @@
 <div class="container-fluid p-0">
 	<div class="row">
-	<img src="<?=base_url()?>/content/imagens/top_visita.png" class="w-100" alt="">
+	<img src="<?=base_url()?>/content/imagens/top_contato.jpg" class="w-100" alt="">
 	</div>
 </div>
 <div class="container clearfix mb-5">
@@ -21,32 +21,3 @@
 		</div>
 	</div>
 </div>
-
-<div class="container-flud d-flex  justify-content-center">
-									<div class="row no-gutters">
-										<div class="col-6">
-											<p class="icon-sprite abv"></p>
-										</div>
-									<div class="col-6 display-5">
-										52
-									</div>
-									<div class="col-6 mt-1">
-											<p class="icon-sprite grau"></p>
-										</div>
-									<div class="col-6 display-5">
-										25,2
-									</div>
-									<div class="col-6">
-											<p class="icon-sprite ibu"></p>
-										</div>
-									<div class="col-6 display-5">
-										25,2
-									</div>
-									<div class="col-6">
-											<p class="icon-sprite ebc"></p>
-										</div>
-									<div class="col-6 display-5">
-										25,2
-									</div>
-									</div>
-								</div>
