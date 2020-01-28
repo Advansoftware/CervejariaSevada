@@ -12,7 +12,7 @@
 					<!-- inicia os cards-->
 						<div class="card mb-5">
 							<img src="<?=base_url();?>content/imagens/pilsen.png" class="card-img-top img-fluid">
-							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="visitacao/whatsapp" class="btn btn-success btn-block card-footer">Ver Mais</a>
+							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="produtos/exibe/1" class="btn btn-success btn-block card-footer">Ver Mais</a>
 						</div>
 						<!-- finaliza os cards-->
 					

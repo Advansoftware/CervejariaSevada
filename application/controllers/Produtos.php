@@ -13,8 +13,12 @@ require_once("Geral.php");
 		{
 			$data['title'] = "Produtos";
 			$this->inicio($data,0);
-			$this->load->view('produtos');
+			$this->load->view('produtos/produtos');
 			$this->load->view('template/footer');
+		}
+		public function exibe($id){
+			$dados['produtos'] = $id;
+			$this->load->view('Produtos/exibe', $dados);
 		}
 }
 ?>
