@@ -29,16 +29,14 @@
     </div>
     <div class="row mt-5 justify-content-center">
       <div class="col-md-4 col-sm-12 text-center" id="texto">
-      <label for="idade" class="col-form-label">Digite Sua Data de Nascimento</label>
-          <div class="form-group mb-2 mt-2">
+      <div for="idade" class="col-form-label">VOCÊ TEM MAIS DE 18 ANOS?</div>
             <div class="row">
-              <div class="col-md-7 col-sm-12 my-2 p-0  mx-auto">
-               <input type="date" class="form-control w-100" nome="idade" id="idade" placeholder="Data de Nascimento">
+              <div class="col-md-5 col-sm-12 my-2 p-0  mx-2">
+                <button onclick="validaIdade('19');" class="btn btn-outline-success btn-block">Sim</button>
               </div>
-              <div class="col-md-5 col-sm-12 my-2 mx-auto w-100">
-                <button onclick="validaIdade();" class="btn btn-success btn-block">Entrar No Site</button>
+              <div class="col-md-5 col-sm-12 my-2 p-0  mx-2">
+                <button onclick="validaIdade('3');" class="btn btn-outline-red btn-block">Não</button>
               </div>
-            </div>
 </div>
       </div>
     </div>
