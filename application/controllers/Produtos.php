@@ -18,7 +18,7 @@ require_once("Geral.php");
 		}
 		public function exibe($id){
 			$dados['produtos'] = $id;
-			$this->load->view('Produtos/exibe', $dados);
+			$this->load->view('produtos/exibe', $dados);
 		}
 }
 ?>
