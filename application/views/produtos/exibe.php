@@ -1,13 +1,13 @@
 <div class="container-fluid">
-    <div class="row no-gutters  d-none d-sm-block"  style="background-image: url('<?=base_url();?>content/imagens/fotos/pilsen.jpeg'); background-position: 100px; background-size: 100%, 50%; background-repeat: no-repeat;">
+    <div class="row no-gutters  d-none d-sm-block"  style="background-image: url('<?=base_url();?>content/imagens/fundos/<?=$produtos[0]['img_fundo'];?>'); background-position: 100px; background-size: 100%, 50%; background-repeat: no-repeat;">
         <div class="col-md-4">
-            <img src="<?=base_url();?>content/imagens/pilsen.png" alt="" class="img-fluid img-thumbnail">
-        </div>  
+            <img src="<?=base_url();?>content/imagens/cervejas/<?= $produtos[0]['imagem'];?>" alt="<?= $produtos[0]['nome'];?>" class="img-fluid img-thumbnail">
+        </div>
     </div>
     <div class="row d-block d-sm-none">
         <div class="col-sm-12 p-0 mb-3">
-            <img src="<?=base_url();?>content/imagens/fotos/pilsen.jpeg" alt="" class="img-fluid w-100" style="height: 15rem;">
-        </div>  
+            <img src="<?=base_url();?>content/imagens/fundos/<?=$produtos[0]['img_fundo'];?>" alt="<?= $produtos[0]['nome'];?>" class="img-fluid w-100" style="height: 15rem;">
+        </div>
     </div>
     <div class="row mb-3 mt-2">
             <div class="col-12">
@@ -23,47 +23,43 @@
 
             <!--Icone/texto -->
                 <div class="col-md-12 col-sm-6 text-left">
-                    <p class="icon-sprite abv"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 20px;left: 27px;">52 %</span></p>    
+                    <p class="icon-sprite abv"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 20px;left: 27px;"><?= $produtos[0]['abv'];?> %</span></p>
                 </div>
             <!--Fim icone/texto-->
 
                 <!--Icone/texto -->
                 <div class="col-md-12 col-sm-6 text-left">
-                    <p class="icon-sprite grau"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 18px;left: 30px;">5-2</span></p>
+                    <p class="icon-sprite grau"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 18px;left: 30px;"><?= $produtos[0]['grau'];?></span></p>
                 </div>
             <!--Fim icone/texto-->
 
                 <!--Icone/texto -->
                 <div class="col-md-12 col-sm-6 text-left">
-                    <p class="icon-sprite ibu"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 25px;left: 30px;">11.5</span></p>
+                    <p class="icon-sprite ibu"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 25px;left: 30px;"<?= $produtos[0]['ibu'];?>11.5</span></p>
             </div>
             <!--Fim icone/texto-->
 
                 <!--Icone/texto -->
                 <div class="col-md-12 col-sm-6 text-left">
-                    <p class="icon-sprite ebc"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 23px;left: 38px;">10</span></p>
+                    <p class="icon-sprite ebc"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 23px;left: 38px;"><?= $produtos[0]['ebc'];?></span></p>
             </div>
             <!--Fim icone/texto-->
-        
+
     </div>
-    <!--Fim coluna-->    
+    <!--Fim coluna-->
     <!-- coluna direita -->
         <div class="col-md-11">
             <div class="container-fluid">
                 <div class="row mt-3">
                     <div class="col-12 text-justify">
-                        <p>Sevda Pilsen é uma cerveja clara, leve e refrescante.
-                        Em nossas receitas, utilizamos as águas límpidas da Serra da mantiqueira,
-                        deixando uma cerveja bem equilibrada.</p>
-                        <p>
-                        Ela leva uma em sua receita uma combinação de lúpulos nobre, proporcionando amargor
-                        suave e aromas cítricos e florais.</p>
+					<?= $produtos[0]['descricao'];?>
                     </div>
                     <div class="col-12 text-justify">
-                        <h5 style="font-size: 1.8rem;" class="display-4 text-left">Pilsen combina com:</h5> 
+                        <h5 style="font-size: 1.8rem;" class="display-4 text-left"><?= $produtos[0]['nome'];?> combina com:</h5>
                         <p>
-                        Peixes leves, saladas frescas e aves.
-                        </p>
+                        <?= $produtos[0]['combinacao'];?>
+						</p>
+
                     </div>
                 </div>
             </div>

@@ -19,8 +19,8 @@ require_once("Geral.php");
 			$this->load->view('template/footer');
 		}
 		public function exibe($id){
-			$dados['produtos'] = $id;
-			$this->load->view('produtos/exibe', $dados);
+			$data['produtos'] = $this->Produtos_model->getProdutosById($id);
+			$this->load->view('produtos/exibe', $data);
 		}
 }
 ?>

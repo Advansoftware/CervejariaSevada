@@ -8,15 +8,18 @@
 			<div class="row">
 				<div class="col-md-12">
 			<!-- Inicio da pagina -->
+
 				<div class="card-columns text-center mt-5" id="ajaxPagination">
 					<!-- inicia os cards-->
+					<?php foreach($produtos as $produto):?>
 						<div class="card mb-5">
-							<img src="<?=base_url();?>content/imagens/pilsen.png" class="card-img-top img-fluid">
-							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="produtos/exibe/1" class="btn btn-success btn-block card-footer">Ver Mais</a>
+							<img src="<?=base_url();?>content/imagens/cervejas/<?=$produto['imagem']?>" class="card-img-top img-fluid">
+							<a data-toggle="modal" data-target=".bd-example-modal-lg" href="produtos/exibe/<?=$produto['id']?>" class="btn btn-success btn-block card-footer">Ver Mais</a>
 						</div>
 						<!-- finaliza os cards-->
-					
-					</div>		
+						<?php endforeach;?>
+					</div>
+
 			<!--Fim da pagina-->
 		</div>
 	</div>
