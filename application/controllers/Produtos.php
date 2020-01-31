@@ -7,10 +7,12 @@ require_once("Geral.php");
 		{
 			parent::__construct();
 			$this->validaIdade();
+			$this->load->model('Produtos_model');
 		}
 
 		public function index()
 		{
+			$data['produtos'] = $this->Produtos_model->getProdutos();
 			$data['title'] = "Produtos";
 			$this->inicio($data,0);
 			$this->load->view('produtos/produtos');
