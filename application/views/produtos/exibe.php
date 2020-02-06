@@ -35,7 +35,7 @@
 
                 <!--Icone/texto -->
                 <div class="col-md-12 col-sm-6 text-left">
-                    <p class="icon-sprite ibu"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 25px;left: 30px;"<?= $produtos[0]['ibu'];?>11.5</span></p>
+                    <p class="icon-sprite ibu"><span class="display-5" style="font-size: 1.5rem; position: relative !important;top: 25px;left: 30px;"><?= $produtos[0]['ibu'];?></span></p>
             </div>
             <!--Fim icone/texto-->
 
