@@ -30,11 +30,14 @@
 				.script('<?php echo base_url();?>assets/js/bootstrap.offcanvas.js').wait()
 				.script('<?php echo base_url();?>assets/js/bootstrap.min.js').wait()
 				.script('<?php echo base_url();?>assets/js/pace.min.js').wait()
+				.script('<?php echo base_url();?>assets/js/settings.js').wait()
+				.script('http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js').wait()
+				.script('<?php echo base_url();?>assets/js/flipgallery.min.js').wait()
 				.script('<?php echo base_url();?>assets/js/js.js');
 		</script>
 		<script src="https://kit.fontawesome.com/92c455016e.js" crossorigin="anonymous"></script>
 	</head>
-	<body id="conteiner">
+	<body id="conteiner" onLoad="flipGallery()">
 		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
