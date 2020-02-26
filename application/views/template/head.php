@@ -35,6 +35,12 @@
 				.script('<?php echo base_url();?>assets/js/flipgallery.min.js').wait()
 				.script('<?php echo base_url();?>assets/js/js.js');
 		</script>
+<style>
+	#map{
+		height:400px;
+		width:100%;
+	}
+</style>
 		<script src="https://kit.fontawesome.com/92c455016e.js" crossorigin="anonymous"></script>
 	</head>
 	<body id="conteiner" onLoad="flipGallery()">
