@@ -1,5 +1,5 @@
 var $doc = $('html, body');
-var base_url =  "http://" + window.location.host + "/git/CervejariaSevda/";
+var base_url =   window.location.protocol + "//" + window.location.host + "/git/CervejariaSevda/";
 $(document).ready(function() {
         $("#ajaxPagination a").click(function(e){
             e.preventDefault();
@@ -40,6 +40,34 @@ function envia_visita(){
             type: 'post'
         }).done(function(html) {
             window.open("https://api.whatsapp.com/send?phone=5535991220077&text="+html, "_blank");
+        });
+    } else {
+        alert("Falta Preencher alguns dados");
+    }
+}
+function envia_email(){
+    var nome = $("#nome").val();
+    var email = $("#email").val();
+    var assunto = $("#assunto").val();
+    var ob = $("#palavra").val();
+    var fd = new FormData();
+    fd.append('email', email);
+    fd.append('assunto', assunto);
+    fd.append('nome', nome);
+    fd.append('ob', ob);
+
+    if (nome != '' && email != '' && ob != '' && assunto != '') {
+        $.ajax({
+            method: "POST",
+            url: base_url+"/contato/envia_email",
+            dataType: 'text',
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: fd,
+            type: 'post'
+        }).done(function(html) {
+           console.table(html);
         });
     } else {
         alert("Falta Preencher alguns dados");

@@ -24,6 +24,7 @@
 		<?= link_tag('assets/css/bootstrap.offcanvas.min.css') ?>
 		<?= link_tag('content/imagens/logo_oficial.jpg', 'shortcut icon', 'image/png') ?>
 		<?= link_tag('assets/css/animate.css') ?>
+		<?= link_tag('assets/css/plyr.css') ?>
 		<script type="text/javascript" language="javascript" src='<?php echo base_url();?>assets/js/LAB.js'></script>
 		<script>
 				$LAB.script('<?php echo base_url();?>assets/js/jquery-3.1.1.min.js').wait()
@@ -31,7 +32,7 @@
 				.script('<?php echo base_url();?>assets/js/bootstrap.min.js').wait()
 				.script('<?php echo base_url();?>assets/js/pace.min.js').wait()
 				.script('<?php echo base_url();?>assets/js/settings.js').wait()
-				.script('http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js').wait()
+				.script('<?php echo base_url();?>assets/js/jquery.min.js').wait()
 				.script('<?php echo base_url();?>assets/js/flipgallery.min.js').wait()
 				.script('<?php echo base_url();?>assets/js/js.js');
 		</script>

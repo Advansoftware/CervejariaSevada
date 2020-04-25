@@ -20,8 +20,14 @@
 								<form method="post" class="form-material">
 									<div class="form-row">
 										<div class="form-group col-md-11">
+											<label for="assunto" class="col-form-label">Assunto: *</label>
+											<input type="assunto" name="assunto" id="assunto" class="form-control" placeholder="Assunto" />
+										</div>
+									</div>
+									<div class="form-row">
+										<div class="form-group col-md-11">
 											<label for="email" class="col-form-label">Email: *</label>
-											<input type="email" name="email" id="email" class="form-control" placeholder="Nome" />
+											<input type="email" name="email" id="email" class="form-control" placeholder="Email" />
 										</div>
 									</div>
 									<div class="form-row">
@@ -32,12 +38,12 @@
 									</div>
 									<div class="form-row">
 										<div class="form-group col-md-11">
-											<label for="palavra" class="col-form-label">Mensagem:</label>
-												<textarea id="palavra" class="form-control" name="" rows="3"></textarea>
+											<label for="palavra" class="col-form-label">Mensagem: *</label>
+												<textarea id="palavra" class="form-control" name="Mensagem" rows="3"></textarea>
 										</div>
 									</div>
 								</form>					
-							<button onclick="envia_visita()" class="btn btn-success btn-block col-md-3"><i class="fas fa-envelope"></i>&nbsp;Enviar</button>
+							<button onclick="envia_email()" class="btn btn-success btn-block col-md-3"><i class="fas fa-envelope"></i>&nbsp;Enviar</button>
 						</div>
 					</div>	
 				</div>
@@ -57,5 +63,5 @@
 	});
 	}
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9quA_cEdny0JAx-NLbhUvOf6WEA5cnNY&callback=initMap"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy0_cn0U2ZGvVI9IIRmB8X6c7ryQiUH3w&callback=initMap"
 async defer></script>
