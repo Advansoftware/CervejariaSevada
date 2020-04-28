@@ -5,7 +5,7 @@
 					<div class="footer-center">
 						<div class="footerClass">
 							<!--div usada para formatação da imagem, e do span, posicionamentos etc..-->
-							<img class="logoFooter img-responsive" alt="imagem05" title="Cervejaria Sevda" src="<?php echo base_url();?>/content/imagens/LOGOMARCA.png">
+							<img class="logoFooter img-responsive" alt="imagem05" title="Cervejaria Sevda" src="<?=base_url();?>/content/imagens/LOGOMARCA.png">
 						</div>
 					</div>
 

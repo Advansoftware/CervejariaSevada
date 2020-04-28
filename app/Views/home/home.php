@@ -40,7 +40,7 @@
 	</div>
   </div>
 </div>
-<script src="<?= base_url();?>/assets/src/js/plyr.js"></script>
+<script src="<?=base_url();?>/assets/src/js/plyr.js"></script>
 <script>
     // Change the second argument to your options:
 // https://github.com/sampotts/plyr/#options
