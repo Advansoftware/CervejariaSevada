@@ -9,8 +9,6 @@ class Home extends BaseController
 		helper('url');
 		helper('html');
 		helper('form');
-		//library('session');
-		//library('email');
 		helper('cookie');
 		$dados['title'] = "Bem Vindo";
 		echo view('template/head',$dados);
