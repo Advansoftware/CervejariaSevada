@@ -24,23 +24,32 @@
 		<?= link_tag('assets/css/bootstrap.offcanvas.min.css') ?>
 		<?= link_tag('content/imagens/logo_oficial.jpg', 'shortcut icon', 'image/png') ?>
 		<?= link_tag('assets/css/animate.css') ?>
-		<script type="text/javascript" language="javascript" src='<?php echo base_url();?>assets/js/LAB.js'></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=85a50ed1d609aad22f0dac1ac70aeb642635fb88&callback=initMap"></script>
+		<?= link_tag('assets/css/plyr.css') ?>
+		<script type="text/javascript" language="javascript" src='<?php echo base_url();?>/assets/js/LAB.js'></script>
 		<script>
-				$LAB.script('<?php echo base_url();?>assets/js/jquery-3.1.1.min.js').wait()
-				.script('<?php echo base_url();?>assets/js/bootstrap.offcanvas.js').wait()
-				.script('<?php echo base_url();?>assets/js/bootstrap.min.js').wait()
-				.script('<?php echo base_url();?>assets/js/pace.min.js').wait()
-				.script('<?php echo base_url();?>assets/js/js.js');
+				$LAB.script('<?php echo base_url();?>/assets/js/jquery-3.1.1.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/bootstrap.offcanvas.js').wait()
+				.script('<?php echo base_url();?>/assets/js/bootstrap.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/pace.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/settings.js').wait()
+				.script('<?php echo base_url();?>/assets/js/jquery.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/flipgallery.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/js.js');
 		</script>
+<style>
+	#map{
+		height:400px;
+		width:100%;
+	}
+</style>
 		<script src="https://kit.fontawesome.com/92c455016e.js" crossorigin="anonymous"></script>
 	</head>
-	<body id="conteiner">
+	<body id="conteiner" onLoad="flipGallery()">
 		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
-					<div class="modal-header bg-info">
-						<h5 class="modal-title text-white" style="text-shadow: 0px 0px 2px rgba(0,0,0,.5)">Pedidos de Providência</h5>
+					<div class="modal-header bg-warning">
+						<h5 class="modal-title text-white" style="text-shadow: 0px 0px 2px rgba(0,0,0,.5)">Cervejaria Sevda</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 						</button>
