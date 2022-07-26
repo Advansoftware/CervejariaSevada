@@ -1,0 +1,324 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F8F2;
+}
+
+.bottom-box {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+    z-index: 100;
+}
+/*Sprite_icon */
+.icon-sprite{
+    background-image: url("../../content/imagens/sprite_icon.png");
+    background-repeat: no-repeat;
+}
+.abv{
+    width: 57px;
+    height: 54px;
+    background-position-y: 0px;
+}
+.grau{
+    width: 57px;
+    height: 54px;
+    background-position-y: -64px;
+}
+.ibu{
+    width: 57px;
+    height: 54px;
+    background-position-y: -125px;
+}
+.ebc{
+    width: 57px;
+    height: 54px;
+    background-position-y: -188px;
+}
+.display-4, .display-5{
+    font-family:"Bourbon W00 Regular" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fim dos icones */
+#info{
+    background: #311607;
+}
+.block.block-pd-sm {
+    padding: 2em 0;
+}
+
+.social-icon {
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 100%;
+}
+
+.facebook {
+    border: 1px solid #4267b2;
+    background-color: #4267b2;
+    color: white;
+    transition: .3s;
+}
+
+#facebook h5 {
+    color: #4267b2;
+}
+
+#facebook a,
+#youtube a {
+    color: black;
+    text-decoration: none;
+}
+
+.youtube {
+    border: 1px solid #ED242D;
+    background-color: #ED242D;
+    color: white;
+    transition: .3s;
+}
+
+#youtube h5 {
+    color: #ED242D;
+}
+
+#conteiner {
+    margin-top: 5rem;
+}
+
+.large {
+    width: 200px;
+    transition: linear .1s;
+}
+.small{
+    width: 115px;
+    transition: linear .1s;
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
+
+footer {
+    background: black;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+    color: aliceblue;
+    display: inline-block;
+    border-top: 3px solid #d2ab68;
+    box-shadow: 0px 0px 0px 3px #d2ab68;
+}
+
+.footer-center {
+    margin: auto;
+}
+
+.footerClass {
+    margin: auto;
+    width: 310px;
+}
+
+.logoFooter {
+    height: 100%;
+    margin-top: 20px;
+}
+
+.footerP {
+    border-top: 1px solid #d3aa68;
+    width: 100%;
+    margin-top: 28px;
+}
+
+.footerTexto {
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 70px 0px 30px 0px;
+    /*deixando um negrito, bem fraco*/
+}
+
+.footer-center {
+    margin-top: 0px;
+    /*posicionando os spans do footerXs*/
+    height: 80px;
+    /*tamanho do footer-center*/
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.menuFixo {
+    background: black;
+    border-bottom: 2px solid #d2ab68;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-nav .active>.nav-link {
+    color: #ffc107 !important;
+    border: 1px solid transparent;
+    border-bottom: 3px solid #dd362d;
+}
+
+.navbar-light .nav-link {
+    color: #f8f9fa !important;
+}
+
+.dropdown-menu {
+    background-color: #16489C;
+}
+
+.dropdown-item {
+    color: #f8f9fa;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+
+/* This is a compiled file, you should be editing the file in the templates directory */
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.pace-inactive {
+    display: none;
+}
+
+.pace .pace-progress {
+    background: green;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.imgPartidosmesa {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 35%;
+    max-height: 100px;
+}
+
+.imgVereadoresmesa {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 4rem;
+    object-fit: cover;
+}
+    #map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+.menu-lateral {
+    text-align: center;
+}
+
+.menu-lateral img {
+    display: inline-block;
+    margin: 3px;
+    width: 150px;
+}
+
+.card-topo {
+    padding: .3rem !important;
+}
+
+.titulo-header-transmissao {
+    background-color: #1e5799;
+    color: #f1f16c;
+    text-shadow: 2px 1px 6px #000000b8;
+}
+
+.titulo-clima {
+    background-color: #4d991e;
+    color: white;
+}
+
+.corpo-clima {
+    background-color: #4479ad;
+}
+
+.btn-card-acess {
+    width: 100%;
+    border-radius: 0px;
+}
+
+.btn-card-pdf {
+    width: 70%;
+    border-radius: 0;
+}
+
+.caption-slide-noticias {
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 5rem;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.caption-noticias-top {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    background-color: rgba(50, 50, 50, .7);
+    height: 3.2rem;
+}
+
+.sessao_title {
+    color: #455a64;
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
