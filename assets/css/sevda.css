@@ -237,7 +237,11 @@ footer {
     margin-top: 4rem;
     object-fit: cover;
 }
-
+    #map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
 .menu-lateral {
     text-align: center;
 }
@@ -309,4 +313,12 @@ footer {
 
 .sessao_title {
     color: #455a64;
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
 }

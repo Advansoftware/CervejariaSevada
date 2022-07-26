@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 	<head> 
 		<!-- Meta Tags utilizadas no site -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +10,7 @@
 		<meta NAME="KEYWORDS" CONTENT="Cervejaria, Brasópolis, Sevda, Cervejaria Brazopolis, Sevda Servejaria, Brazópolis" >
 		<meta property="og:description" content="Acesse o site oficial da Cervejaria Sevda e fique por dentro das nossas novas cervejas artesanais na rota do Caminho da Fé, agende sua visita a cervejaria e muito mais." />
 		<meta property="og:image" content="<?php echo base_url();?>content/imagens/sevda_face.png" />	
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1,user-scalable=no">
 		<meta NAME="LANGUAGE" CONTENT="PT" >
 		<!-- Fim das meta Tags -->	
 
@@ -19,23 +20,36 @@
 		<?= link_tag('assets/css/sevda.css') ?>
 		<?= link_tag('assets/css/style.css') ?>
 		<?= link_tag('assets/css/normalize.css') ?>
-		<?= link_tag('assets/css/all.css') ?>
+		<?= link_tag('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css') ?>
 		<?= link_tag('assets/css/bootstrap.offcanvas.min.css') ?>
 		<?= link_tag('content/imagens/logo_oficial.jpg', 'shortcut icon', 'image/png') ?>
 		<?= link_tag('assets/css/animate.css') ?>
-		<script type="text/javascript" language="javascript" src='<?php echo base_url();?>assets/js/jquery-3.1.1.min.js'></script>
-		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/bootstrap.offcanvas.js'></script>
-		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/bootstrap.min.js'></script>
-		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/pace.min.js'></script>
-		<script type="text/javascript" language="javascript" async src='<?php echo base_url();?>assets/js/js.js'></script>
+		<?= link_tag('assets/css/plyr.css') ?>
+		<script type="text/javascript" language="javascript" src='<?php echo base_url();?>/assets/js/LAB.js'></script>
+		<script>
+				$LAB.script('<?php echo base_url();?>/assets/js/jquery-3.1.1.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/bootstrap.offcanvas.js').wait()
+				.script('<?php echo base_url();?>/assets/js/bootstrap.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/pace.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/settings.js').wait()
+				.script('<?php echo base_url();?>/assets/js/jquery.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/flipgallery.min.js').wait()
+				.script('<?php echo base_url();?>/assets/js/js.js');
+		</script>
+<style>
+	#map{
+		height:400px;
+		width:100%;
+	}
+</style>
 		<script src="https://kit.fontawesome.com/92c455016e.js" crossorigin="anonymous"></script>
 	</head>
-	<body id="conteiner">
+	<body id="conteiner" onLoad="flipGallery()">
 		<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
-					<div class="modal-header bg-info">
-						<h5 class="modal-title text-white" style="text-shadow: 0px 0px 2px rgba(0,0,0,.5)">Pedidos de Providência</h5>
+					<div class="modal-header bg-warning">
+						<h5 class="modal-title text-white" style="text-shadow: 0px 0px 2px rgba(0,0,0,.5)">Cervejaria Sevda</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 						</button>
@@ -45,21 +59,29 @@
 				</div>
 			</div>
 		</div>
-		<!-- Load Facebook SDK for JavaScript -->
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+          });
+        };
 
-		<!-- Your customer chat code -->
-		<div class="fb-customerchat"
-		attribution=setup_tool
-		page_id="1156837047748369"
-		theme_color="#0084ff"
-		logged_in_greeting="Ola, Como posso ajudar você?"
-		logged_out_greeting="Ola, Como posso ajudar você?">
-		</div>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="2379488575455820"
+  theme_color="#311607"
+  logged_in_greeting="Olá, Como posso ajudar você?"
+  logged_out_greeting="Olá, Como posso ajudar você?">
+      </div>

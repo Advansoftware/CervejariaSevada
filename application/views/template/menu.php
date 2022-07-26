@@ -42,11 +42,20 @@ data-toggle="offcanvas" data-target="#js-bootstrap-offcanvas">&#x2630; <span cla
         <?php else : ?>
           <li class="nav-item">
         <?php endif;?>
-        <a class="nav-link" href="<?php echo base_url();?>contato?id=4">Contato</a>
+        <a class="nav-link" href="<?php echo base_url();?>galeria?id=4">Galeria</a>
+      </li>
+      <?php
+      if($get_id==5):
+        ?>
+        <li class="nav-item bounceIn active">
+        <?php else : ?>
+          <li class="nav-item">
+        <?php endif;?>
+        <a class="nav-link" href="<?php echo base_url();?>contato?id=5">Contato</a>
       </li>
 	</ul>
   </div>
 </nav>
-<div class="mt-4 bg-dark">
+<div class="bg-dark">
 	<br/>
 </div>
