@@ -21,6 +21,8 @@ code {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+	position: fixed;
+	width: 100%;
 }
 .black-theme{
   background-color: rgba(0,0,0,.8);
